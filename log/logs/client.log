@@ -1,0 +1,21 @@
+2023-06-03 21:41:28,399 DEBUG client_log_config.py Debug info
+2023-06-03 21:41:28,400 INFO client_log_config.py Info
+2023-06-03 21:41:28,400 ERROR client_log_config.py Error
+2023-06-03 21:41:28,400 CRITICAL client_log_config.py Critical error
+2023-06-03 22:47:25,469 INFO client.py IP-address: localhost, TCP-port: 8888
+2023-06-03 22:47:25,470 ERROR client.py Something went wrong: socket.connect() takes exactly one argument (2 given)
+2023-06-03 22:48:57,150 INFO client.py IP-address: localhost, TCP-port: 8888
+2023-06-03 22:48:57,152 ERROR client.py Something went wrong: str, bytes or bytearray expected, not int
+2023-06-03 22:49:27,664 INFO client.py IP-address: localhost, TCP-port: 8888
+2023-06-03 22:49:27,664 ERROR client.py Something went wrong: str, bytes or bytearray expected, not int
+2023-06-03 22:50:40,546 INFO client.py IP-address: localhost, TCP-port: 8888
+2023-06-03 22:50:40,546 ERROR client.py Something went wrong: str, bytes or bytearray expected, not int
+2023-06-03 22:51:56,765 INFO client.py IP-address: localhost, TCP-port: 7777
+2023-06-03 22:51:56,765 ERROR client.py Something went wrong: str, bytes or bytearray expected, not int
+2023-06-03 22:53:54,536 INFO client.py IP-address: localhost, TCP-port: 7777
+2023-06-03 22:53:54,541 INFO client.py Connected to server: 7777:localhost
+2023-06-03 22:53:54,542 INFO client.py The presence message ({'action': 'presence', 'time': 1685822034.528017, 'type': 'status', 'user': {'account_name': 'kiki159', 'status': 'Online!'}}) was sent to the server: 7777:localhost
+2023-06-03 22:54:16,290 INFO client.py IP-address: localhost, TCP-port: 8888
+2023-06-03 22:54:16,290 INFO client.py Connected to server: 8888:localhost
+2023-06-03 22:54:16,290 INFO client.py The presence message ({'action': 'presence', 'time': 1685822056.275206, 'type': 'status', 'user': {'account_name': 'kiki159', 'status': 'Online!'}}) was sent to the server: 8888:localhost
+2023-06-03 22:54:16,290 INFO client.py The response from the server was received: {'response': 200, 'alert': 'Подключение прошло успешно'}
