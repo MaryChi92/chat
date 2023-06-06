@@ -4,11 +4,13 @@ from argparse import ArgumentParser
 
 from utils import Utils
 from log.server_log_config import logger
+from log.deco_log_config import Log
 
 
 class Server:
 
     @staticmethod
+    @Log()
     def get_response_message(message):
         logger.info(f"Getting a response for client's message {message}")
 
@@ -26,6 +28,7 @@ class Server:
         return resp_code_400
 
     @staticmethod
+    @Log()
     def parse_params():
         parser = ArgumentParser()
         parser.add_argument('-p', type=int, default=7777, help='TCP-port')
@@ -36,6 +39,7 @@ class Server:
         )
         return args.a, args.p
 
+    @Log()
     def main(self):
         try:
             s = socket(AF_INET, SOCK_STREAM)

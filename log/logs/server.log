@@ -1,16 +1,9 @@
-2023-06-03 19:44:59,796 DEBUG server_log_config.py Debug info
-2023-06-03 19:44:59,796 INFO server_log_config.py Info
-2023-06-03 19:44:59,796 ERROR server_log_config.py Error
-2023-06-03 19:44:59,796 CRITICAL server_log_config.py Critical error
-2023-06-03 22:25:16,208 INFO server.py IP-address: localhost, TCP-port: 7777
-2023-06-03 22:46:07,120 INFO server.py IP-address: localhost, TCP-port: 7777
-2023-06-03 22:46:07,126 ERROR server.py Something went wrong: [WinError 10048] Обычно разрешается только одно использование адреса сокета (протокол/сетевой адрес/порт)
-2023-06-03 22:46:26,430 INFO server.py IP-address: localhost, TCP-port: 7777
-2023-06-03 22:46:26,434 ERROR server.py Something went wrong: [WinError 10048] Обычно разрешается только одно использование адреса сокета (протокол/сетевой адрес/порт)
-2023-06-03 22:47:00,960 INFO server.py IP-address: localhost, TCP-port: 8888
-2023-06-03 22:54:16,290 INFO server.py The connection was set - client: <socket.socket fd=484, family=2, type=1, proto=0, laddr=('127.0.0.1', 8888), raddr=('127.0.0.1', 49226)>, address: ('127.0.0.1', 49226)
-2023-06-03 22:54:16,290 INFO server.py The message from client was received: {'action': 'presence', 'time': 1685822056.275206, 'type': 'status', 'user': {'account_name': 'kiki159', 'status': 'Online!'}}
-2023-06-03 22:54:16,290 INFO server.py Getting a response for client's message {'action': 'presence', 'time': 1685822056.275206, 'type': 'status', 'user': {'account_name': 'kiki159', 'status': 'Online!'}}
-2023-06-03 22:54:16,290 INFO server.py The response for the client was created: {'response': 200, 'alert': 'Подключение прошло успешно'}
-2023-06-03 22:54:16,290 INFO server.py The response ({'response': 200, 'alert': 'Подключение прошло успешно'}) for the client (<socket.socket fd=484, family=2, type=1, proto=0, laddr=('127.0.0.1', 8888), raddr=('127.0.0.1', 49226)>) was sent
-2023-06-03 22:54:16,290 INFO server.py The connection with client was closed - client: <socket.socket [closed] fd=-1, family=2, type=1, proto=0>, address - ('127.0.0.1', 49226)
+2023-06-06 17:53:52,320 INFO server.py The connection was set - client: <socket.socket fd=484, family=2, type=1, proto=0, laddr=('127.0.0.1', 8888), raddr=('127.0.0.1', 60647)>, address: ('127.0.0.1', 60647)
+2023-06-06 17:53:52,320 INFO server.py Function get_message was called - args: (<socket.socket fd=484, family=2, type=1, proto=0, laddr=('127.0.0.1', 8888), raddr=('127.0.0.1', 60647)>,), kwargs: {}. It was called from function main
+2023-06-06 17:53:52,320 INFO server.py The message from client was received: {'action': 'presence', 'time': 1686063232.303866, 'type': 'status', 'user': {'account_name': 'kiki159', 'status': 'Online!'}}
+2023-06-06 17:53:52,320 INFO server.py Getting a response for client's message {'action': 'presence', 'time': 1686063232.303866, 'type': 'status', 'user': {'account_name': 'kiki159', 'status': 'Online!'}}
+2023-06-06 17:53:52,320 INFO server.py Function get_response_message was called - args: ({'action': 'presence', 'time': 1686063232.303866, 'type': 'status', 'user': {'account_name': 'kiki159', 'status': 'Online!'}},), kwargs: {}. It was called from function main
+2023-06-06 17:53:52,320 INFO server.py The response for the client was created: {'response': 200, 'alert': 'Подключение прошло успешно'}
+2023-06-06 17:53:52,320 INFO server.py Function send_message was called - args: (<socket.socket fd=484, family=2, type=1, proto=0, laddr=('127.0.0.1', 8888), raddr=('127.0.0.1', 60647)>, {'response': 200, 'alert': 'Подключение прошло успешно'}), kwargs: {}. It was called from function main
+2023-06-06 17:53:52,320 INFO server.py The response ({'response': 200, 'alert': 'Подключение прошло успешно'}) for the client (<socket.socket fd=484, family=2, type=1, proto=0, laddr=('127.0.0.1', 8888), raddr=('127.0.0.1', 60647)>) was sent
+2023-06-06 17:53:52,320 INFO server.py The connection with client was closed - client: <socket.socket [closed] fd=-1, family=2, type=1, proto=0>, address - ('127.0.0.1', 60647)
