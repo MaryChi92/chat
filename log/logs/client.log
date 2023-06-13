@@ -19,3 +19,11 @@
 2023-06-03 22:54:16,290 INFO client.py Connected to server: 8888:localhost
 2023-06-03 22:54:16,290 INFO client.py The presence message ({'action': 'presence', 'time': 1685822056.275206, 'type': 'status', 'user': {'account_name': 'kiki159', 'status': 'Online!'}}) was sent to the server: 8888:localhost
 2023-06-03 22:54:16,290 INFO client.py The response from the server was received: {'response': 200, 'alert': 'Подключение прошло успешно'}
+2023-06-06 17:53:52,311 INFO client.py IP-address: localhost, TCP-port: 8888
+2023-06-06 17:53:52,311 INFO client.py Function parse_params was called - args: (), kwargs: {}. It was called from function client.main()
+2023-06-06 17:53:52,320 INFO client.py Connected to server: 8888:localhost
+2023-06-06 17:53:52,320 INFO client.py Function send_message was called - args: (<socket.socket fd=400, family=2, type=1, proto=0, laddr=('127.0.0.1', 60647), raddr=('127.0.0.1', 8888)>, {'action': 'presence', 'time': 1686063232.303866, 'type': 'status', 'user': {'account_name': 'kiki159', 'status': 'Online!'}}), kwargs: {}. It was called from function client.main()
+2023-06-06 17:53:52,320 INFO client.py The presence message ({'action': 'presence', 'time': 1686063232.303866, 'type': 'status', 'user': {'account_name': 'kiki159', 'status': 'Online!'}}) was sent to the server: 8888:localhost
+2023-06-06 17:53:52,320 INFO client.py Function get_message was called - args: (<socket.socket fd=400, family=2, type=1, proto=0, laddr=('127.0.0.1', 60647), raddr=('127.0.0.1', 8888)>,), kwargs: {}. It was called from function client.main()
+2023-06-06 17:53:52,320 INFO client.py The response from the server was received: {'response': 200, 'alert': 'Подключение прошло успешно'}
+2023-06-06 17:53:52,320 INFO client.py Function main was called - args: (<__main__.Client object at 0x0000018C9C31E650>,), kwargs: {}. It was called from function client.main()

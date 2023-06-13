@@ -5,6 +5,7 @@ from argparse import ArgumentParser
 
 from utils import Utils
 from log.client_log_config import logger
+from log.deco_log_config import Log
 
 
 class Client(Utils):
@@ -19,6 +20,7 @@ class Client(Utils):
     }
 
     @staticmethod
+    @Log()
     def parse_params():
         parser = ArgumentParser()
         parser.add_argument('a', type=str, default='localhost', help='IP-address')
@@ -29,6 +31,7 @@ class Client(Utils):
         )
         return args.a, args.p
 
+    @Log()
     def main(self):
         try:
             s = socket(AF_INET, SOCK_STREAM)
