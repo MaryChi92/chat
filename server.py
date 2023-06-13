@@ -57,7 +57,7 @@ class Server(Utils):
     def check_requests(self, recv_data_clients_list, all_clients):
         for sock in recv_data_clients_list:
             try:
-                message = self.get_message(recv_data_clients_list[sock])
+                message = self.get_message(sock)
                 self.messages.append(message)
             except:
                 logger.info(f'Client {sock.getpeername()} disconnected')

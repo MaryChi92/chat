@@ -72,7 +72,7 @@ class Client(Utils):
                         logger.info(f'The message was received: {message}')
 
                 if mode == 'send':
-                    while message := input("Enter your message or Q for exit: ") != 'Q':
+                    while (message := input("Enter your message or Q for exit: ")) != 'Q':
                         _message = self.create_message(action="message", body=message)
                         self.send_message(sock, _message)
                         logger.info(f'Message {_message} was sent')
