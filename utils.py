@@ -12,6 +12,9 @@ class Utils:
 
     @staticmethod
     @Log()
-    def send_message(socket, message):
+    def send_message(socket, message, uppercase=False):
         message = json.dumps(message).encode('utf-8')
-        socket.send(message)
+        if uppercase:
+            socket.send(message.upper())
+        else:
+            socket.send(message)

@@ -27,3 +27,197 @@
 2023-06-06 17:53:52,320 INFO client.py Function get_message was called - args: (<socket.socket fd=400, family=2, type=1, proto=0, laddr=('127.0.0.1', 60647), raddr=('127.0.0.1', 8888)>,), kwargs: {}. It was called from function client.main()
 2023-06-06 17:53:52,320 INFO client.py The response from the server was received: {'response': 200, 'alert': 'Подключение прошло успешно'}
 2023-06-06 17:53:52,320 INFO client.py Function main was called - args: (<__main__.Client object at 0x0000018C9C31E650>,), kwargs: {}. It was called from function client.main()
+2023-06-13 16:42:08,086 INFO client.py IP-address: localhost, TCP-port: 8888
+2023-06-13 16:42:08,086 INFO client.py Function parse_params was called - args: (), kwargs: {}. It was called from function client.main()
+2023-06-13 16:42:08,086 INFO client.py Connected to server: 8888:localhost
+2023-06-13 16:42:08,086 INFO client.py Function connect_to_socket was called - args: (<__main__.Client object at 0x0000016ABD3A0E10>, 'localhost', 8888), kwargs: {}. It was called from function client.main()
+2023-06-13 16:42:08,086 INFO client.py Function create_message was called - args: (), kwargs: {'action': 'presence', 'type': 'status', 'user': {'account_name': 'kiki159', 'status': 'Online!'}}. It was called from function client.main()
+2023-06-13 16:47:28,602 INFO client.py IP-address: localhost, TCP-port: 8888
+2023-06-13 16:47:28,602 INFO client.py Function parse_params was called - args: (), kwargs: {}. It was called from function client.main()
+2023-06-13 16:47:28,602 INFO client.py Connected to server: 8888:localhost
+2023-06-13 16:47:28,602 INFO client.py Function connect_to_socket was called - args: (<__main__.Client object at 0x000001C0C32B0E10>, 'localhost', 8888), kwargs: {}. It was called from function client.main()
+2023-06-13 16:47:28,602 INFO client.py Function create_message was called - args: (), kwargs: {'action': 'presence', 'type': 'status', 'user': {'account_name': 'kiki159', 'status': 'Online!'}}. It was called from function client.main()
+2023-06-13 16:47:28,602 INFO client.py Function send_message was called - args: (<socket.socket fd=404, family=2, type=1, proto=0, laddr=('127.0.0.1', 63588), raddr=('127.0.0.1', 8888)>, {'action': 'presence', 'time': 1686664048.6027923, 'type': 'status', 'user': {'account_name': 'kiki159', 'status': 'Online!'}}), kwargs: {}. It was called from function client.main()
+2023-06-13 16:48:06,627 INFO client.py IP-address: localhost, TCP-port: 8888
+2023-06-13 16:48:06,627 INFO client.py Function parse_params was called - args: (), kwargs: {}. It was called from function client.main()
+2023-06-13 16:48:06,627 INFO client.py Connected to server: 8888:localhost
+2023-06-13 16:48:06,627 INFO client.py Function connect_to_socket was called - args: (<__main__.Client object at 0x000001715A6F0C50>, 'localhost', 8888), kwargs: {}. It was called from function client.main()
+2023-06-13 16:48:06,627 INFO client.py Function create_message was called - args: (), kwargs: {'action': 'presence', 'type': 'status', 'user': {'account_name': 'kiki159', 'status': 'Online!'}}. It was called from function client.main()
+2023-06-13 16:48:06,627 INFO client.py Function send_message was called - args: (<socket.socket fd=368, family=2, type=1, proto=0, laddr=('127.0.0.1', 63742), raddr=('127.0.0.1', 8888)>, {'action': 'presence', 'time': 1686664086.6277883, 'type': 'status', 'user': {'account_name': 'kiki159', 'status': 'Online!'}}), kwargs: {}. It was called from function client.main()
+2023-06-13 16:52:34,646 INFO client.py IP-address: localhost, TCP-port: 8888
+2023-06-13 16:52:34,646 INFO client.py Function parse_params was called - args: (), kwargs: {}. It was called from function client.main()
+2023-06-13 16:52:35,190 INFO client.py IP-address: localhost, TCP-port: 8888
+2023-06-13 16:52:35,192 INFO client.py Function parse_params was called - args: (), kwargs: {}. It was called from function client.main()
+2023-06-13 16:52:35,709 INFO client.py IP-address: localhost, TCP-port: 8888
+2023-06-13 16:52:35,709 INFO client.py Function parse_params was called - args: (), kwargs: {}. It was called from function client.main()
+2023-06-13 16:52:36,310 INFO client.py IP-address: localhost, TCP-port: 8888
+2023-06-13 16:52:36,310 INFO client.py Function parse_params was called - args: (), kwargs: {}. It was called from function client.main()
+2023-06-13 16:52:36,687 ERROR client.py Something went wrong: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение
+2023-06-13 16:52:36,813 INFO client.py IP-address: localhost, TCP-port: 8888
+2023-06-13 16:52:36,813 INFO client.py Function parse_params was called - args: (), kwargs: {}. It was called from function client.main()
+2023-06-13 16:52:37,224 ERROR client.py Something went wrong: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение
+2023-06-13 16:52:37,336 INFO client.py IP-address: localhost, TCP-port: 8888
+2023-06-13 16:52:37,336 INFO client.py Function parse_params was called - args: (), kwargs: {}. It was called from function client.main()
+2023-06-13 16:52:37,748 ERROR client.py Something went wrong: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение
+2023-06-13 16:52:38,364 ERROR client.py Something went wrong: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение
+2023-06-13 16:52:38,855 ERROR client.py Something went wrong: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение
+2023-06-13 16:52:39,376 ERROR client.py Something went wrong: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение
+2023-06-13 16:52:57,611 INFO client.py IP-address: localhost, TCP-port: 8888
+2023-06-13 16:52:57,611 INFO client.py Function parse_params was called - args: (), kwargs: {}. It was called from function client.main()
+2023-06-13 16:52:58,208 INFO client.py IP-address: localhost, TCP-port: 8888
+2023-06-13 16:52:58,210 INFO client.py Function parse_params was called - args: (), kwargs: {}. It was called from function client.main()
+2023-06-13 16:52:58,681 INFO client.py IP-address: localhost, TCP-port: 8888
+2023-06-13 16:52:58,681 INFO client.py Function parse_params was called - args: (), kwargs: {}. It was called from function client.main()
+2023-06-13 16:52:59,186 INFO client.py IP-address: localhost, TCP-port: 8888
+2023-06-13 16:52:59,186 INFO client.py Function parse_params was called - args: (), kwargs: {}. It was called from function client.main()
+2023-06-13 16:52:59,661 ERROR client.py Something went wrong: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение
+2023-06-13 16:52:59,756 INFO client.py IP-address: localhost, TCP-port: 8888
+2023-06-13 16:52:59,756 INFO client.py Function parse_params was called - args: (), kwargs: {}. It was called from function client.main()
+2023-06-13 16:53:00,246 ERROR client.py Something went wrong: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение
+2023-06-13 16:53:00,294 INFO client.py IP-address: localhost, TCP-port: 8888
+2023-06-13 16:53:00,294 INFO client.py Function parse_params was called - args: (), kwargs: {}. It was called from function client.main()
+2023-06-13 16:53:00,730 ERROR client.py Something went wrong: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение
+2023-06-13 16:53:01,239 ERROR client.py Something went wrong: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение
+2023-06-13 16:53:01,791 ERROR client.py Something went wrong: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение
+2023-06-13 16:53:02,326 ERROR client.py Something went wrong: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение
+2023-06-13 17:12:39,937 INFO client.py IP-address: localhost, TCP-port: 8888
+2023-06-13 17:12:39,937 INFO client.py Function parse_params was called - args: (), kwargs: {}. It was called from function client.main()
+2023-06-13 17:12:40,518 INFO client.py IP-address: localhost, TCP-port: 8888
+2023-06-13 17:12:40,520 INFO client.py Function parse_params was called - args: (), kwargs: {}. It was called from function client.main()
+2023-06-13 17:12:41,071 INFO client.py IP-address: localhost, TCP-port: 8888
+2023-06-13 17:12:41,071 INFO client.py Function parse_params was called - args: (), kwargs: {}. It was called from function client.main()
+2023-06-13 17:12:41,987 ERROR client.py Something went wrong: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение
+2023-06-13 17:12:42,556 ERROR client.py Something went wrong: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение
+2023-06-13 17:12:43,108 ERROR client.py Something went wrong: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение
+2023-06-13 17:43:14,396 INFO client.py IP-address: localhost, TCP-port: 7777
+2023-06-13 17:43:14,396 INFO client.py Function parse_params was called - args: (), kwargs: {}. It was called from function client.main()
+2023-06-13 17:43:14,404 INFO client.py Connected to server: 7777:localhost
+2023-06-13 17:43:14,404 INFO client.py Function connect_to_socket was called - args: (<__main__.Client object at 0x0000027583154350>, 'localhost', 7777), kwargs: {}. It was called from function client.main()
+2023-06-13 17:43:14,404 INFO client.py Function create_message was called - args: (), kwargs: {'action': 'presence', 'type': 'status', 'user': {'account_name': 'kiki159', 'status': 'Online!'}}. It was called from function client.main()
+2023-06-13 17:43:14,409 INFO client.py Function send_message was called - args: (<socket.socket fd=448, family=2, type=1, proto=0, laddr=('127.0.0.1', 60560), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1686667394.40471, 'type': 'status', 'user': {'account_name': 'kiki159', 'status': 'Online!'}}), kwargs: {}. It was called from function client.main()
+2023-06-13 17:43:14,972 INFO client.py IP-address: localhost, TCP-port: 7777
+2023-06-13 17:43:14,973 INFO client.py Function parse_params was called - args: (), kwargs: {}. It was called from function client.main()
+2023-06-13 17:43:14,982 INFO client.py Connected to server: 7777:localhost
+2023-06-13 17:43:14,983 INFO client.py Function connect_to_socket was called - args: (<__main__.Client object at 0x000001E325424350>, 'localhost', 7777), kwargs: {}. It was called from function client.main()
+2023-06-13 17:43:14,983 INFO client.py Function create_message was called - args: (), kwargs: {'action': 'presence', 'type': 'status', 'user': {'account_name': 'kiki159', 'status': 'Online!'}}. It was called from function client.main()
+2023-06-13 17:43:14,983 INFO client.py Function send_message was called - args: (<socket.socket fd=504, family=2, type=1, proto=0, laddr=('127.0.0.1', 60565), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1686667394.983773, 'type': 'status', 'user': {'account_name': 'kiki159', 'status': 'Online!'}}), kwargs: {}. It was called from function client.main()
+2023-06-13 17:43:15,542 INFO client.py IP-address: localhost, TCP-port: 7777
+2023-06-13 17:43:15,542 INFO client.py Function parse_params was called - args: (), kwargs: {}. It was called from function client.main()
+2023-06-13 17:43:15,558 INFO client.py Connected to server: 7777:localhost
+2023-06-13 17:43:15,558 INFO client.py Function connect_to_socket was called - args: (<__main__.Client object at 0x0000023ADEA34350>, 'localhost', 7777), kwargs: {}. It was called from function client.main()
+2023-06-13 17:43:15,558 INFO client.py Function create_message was called - args: (), kwargs: {'action': 'presence', 'type': 'status', 'user': {'account_name': 'kiki159', 'status': 'Online!'}}. It was called from function client.main()
+2023-06-13 17:43:15,558 INFO client.py Function send_message was called - args: (<socket.socket fd=484, family=2, type=1, proto=0, laddr=('127.0.0.1', 60568), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1686667395.558164, 'type': 'status', 'user': {'account_name': 'kiki159', 'status': 'Online!'}}), kwargs: {}. It was called from function client.main()
+2023-06-13 17:43:16,080 INFO client.py IP-address: localhost, TCP-port: 7777
+2023-06-13 17:43:16,080 INFO client.py Function parse_params was called - args: (), kwargs: {}. It was called from function client.main()
+2023-06-13 17:43:16,096 INFO client.py Connected to server: 7777:localhost
+2023-06-13 17:43:16,097 INFO client.py Function connect_to_socket was called - args: (<__main__.Client object at 0x0000023DE6A74350>, 'localhost', 7777), kwargs: {}. It was called from function client.main()
+2023-06-13 17:43:16,097 INFO client.py Function create_message was called - args: (), kwargs: {'action': 'presence', 'type': 'status', 'user': {'account_name': 'kiki159', 'status': 'Online!'}}. It was called from function client.main()
+2023-06-13 17:43:16,097 INFO client.py Function send_message was called - args: (<socket.socket fd=524, family=2, type=1, proto=0, laddr=('127.0.0.1', 60571), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1686667396.0978146, 'type': 'status', 'user': {'account_name': 'kiki159', 'status': 'Online!'}}), kwargs: {}. It was called from function client.main()
+2023-06-13 17:43:16,570 INFO client.py IP-address: localhost, TCP-port: 7777
+2023-06-13 17:43:16,570 INFO client.py Function parse_params was called - args: (), kwargs: {}. It was called from function client.main()
+2023-06-13 17:43:16,580 INFO client.py Connected to server: 7777:localhost
+2023-06-13 17:43:16,580 INFO client.py Function connect_to_socket was called - args: (<__main__.Client object at 0x000001802B214350>, 'localhost', 7777), kwargs: {}. It was called from function client.main()
+2023-06-13 17:43:16,580 INFO client.py Function create_message was called - args: (), kwargs: {'action': 'presence', 'type': 'status', 'user': {'account_name': 'kiki159', 'status': 'Online!'}}. It was called from function client.main()
+2023-06-13 17:43:16,580 INFO client.py Function send_message was called - args: (<socket.socket fd=408, family=2, type=1, proto=0, laddr=('127.0.0.1', 60574), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1686667396.580255, 'type': 'status', 'user': {'account_name': 'kiki159', 'status': 'Online!'}}), kwargs: {}. It was called from function client.main()
+2023-06-13 17:53:26,807 INFO client.py IP-address: localhost, TCP-port: 7777
+2023-06-13 17:53:26,808 INFO client.py Function parse_params was called - args: (), kwargs: {}. It was called from function client.main()
+2023-06-13 17:53:26,828 INFO client.py Connected to server: 7777:localhost
+2023-06-13 17:53:26,832 INFO client.py Function connect_to_socket was called - args: (<__main__.Client object at 0x000002C652154350>, 'localhost', 7777), kwargs: {}. It was called from function client.main()
+2023-06-13 17:53:26,833 INFO client.py Function create_message was called - args: (), kwargs: {'action': 'presence', 'type': 'status', 'user': {'account_name': 'kiki159', 'status': 'Online!'}}. It was called from function client.main()
+2023-06-13 17:53:26,835 INFO client.py Function send_message was called - args: (<socket.socket fd=428, family=2, type=1, proto=0, laddr=('127.0.0.1', 63038), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1686668006.8338118, 'type': 'status', 'user': {'account_name': 'kiki159', 'status': 'Online!'}}), kwargs: {}. It was called from function client.main()
+2023-06-13 17:53:27,330 INFO client.py IP-address: localhost, TCP-port: 7777
+2023-06-13 17:53:27,333 INFO client.py Function parse_params was called - args: (), kwargs: {}. It was called from function client.main()
+2023-06-13 17:53:27,341 INFO client.py Connected to server: 7777:localhost
+2023-06-13 17:53:27,342 INFO client.py Function connect_to_socket was called - args: (<__main__.Client object at 0x000001C6477A4350>, 'localhost', 7777), kwargs: {}. It was called from function client.main()
+2023-06-13 17:53:27,342 ERROR client.py Something went wrong: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2023-06-13 17:53:27,343 INFO client.py Function create_message was called - args: (), kwargs: {'action': 'presence', 'type': 'status', 'user': {'account_name': 'kiki159', 'status': 'Online!'}}. It was called from function client.main()
+2023-06-13 17:53:27,344 INFO client.py Function send_message was called - args: (<socket.socket fd=492, family=2, type=1, proto=0, laddr=('127.0.0.1', 63041), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1686668007.3422146, 'type': 'status', 'user': {'account_name': 'kiki159', 'status': 'Online!'}}), kwargs: {}. It was called from function client.main()
+2023-06-13 17:53:27,864 INFO client.py IP-address: localhost, TCP-port: 7777
+2023-06-13 17:53:27,864 INFO client.py Function parse_params was called - args: (), kwargs: {}. It was called from function client.main()
+2023-06-13 17:53:27,879 INFO client.py Connected to server: 7777:localhost
+2023-06-13 17:53:27,879 ERROR client.py Something went wrong: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2023-06-13 17:53:27,879 INFO client.py Function connect_to_socket was called - args: (<__main__.Client object at 0x0000024F7C604350>, 'localhost', 7777), kwargs: {}. It was called from function client.main()
+2023-06-13 17:53:27,879 INFO client.py Function create_message was called - args: (), kwargs: {'action': 'presence', 'type': 'status', 'user': {'account_name': 'kiki159', 'status': 'Online!'}}. It was called from function client.main()
+2023-06-13 17:53:27,879 INFO client.py Function send_message was called - args: (<socket.socket fd=356, family=2, type=1, proto=0, laddr=('127.0.0.1', 63044), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1686668007.8798826, 'type': 'status', 'user': {'account_name': 'kiki159', 'status': 'Online!'}}), kwargs: {}. It was called from function client.main()
+2023-06-13 17:53:28,399 INFO client.py IP-address: localhost, TCP-port: 7777
+2023-06-13 17:53:28,399 INFO client.py Function parse_params was called - args: (), kwargs: {}. It was called from function client.main()
+2023-06-13 17:53:28,399 INFO client.py Connected to server: 7777:localhost
+2023-06-13 17:53:28,415 ERROR client.py Something went wrong: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2023-06-13 17:53:28,415 INFO client.py Function connect_to_socket was called - args: (<__main__.Client object at 0x0000024C6D114350>, 'localhost', 7777), kwargs: {}. It was called from function client.main()
+2023-06-13 17:53:28,415 INFO client.py Function create_message was called - args: (), kwargs: {'action': 'presence', 'type': 'status', 'user': {'account_name': 'kiki159', 'status': 'Online!'}}. It was called from function client.main()
+2023-06-13 17:53:28,415 INFO client.py Function send_message was called - args: (<socket.socket fd=440, family=2, type=1, proto=0, laddr=('127.0.0.1', 63047), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1686668008.4151163, 'type': 'status', 'user': {'account_name': 'kiki159', 'status': 'Online!'}}), kwargs: {}. It was called from function client.main()
+2023-06-13 17:53:28,855 INFO client.py IP-address: localhost, TCP-port: 7777
+2023-06-13 17:53:28,855 INFO client.py Function parse_params was called - args: (), kwargs: {}. It was called from function client.main()
+2023-06-13 17:53:28,871 INFO client.py Connected to server: 7777:localhost
+2023-06-13 17:53:28,871 INFO client.py Function connect_to_socket was called - args: (<__main__.Client object at 0x000001D67AE04350>, 'localhost', 7777), kwargs: {}. It was called from function client.main()
+2023-06-13 17:53:28,871 INFO client.py Function create_message was called - args: (), kwargs: {'action': 'presence', 'type': 'status', 'user': {'account_name': 'kiki159', 'status': 'Online!'}}. It was called from function client.main()
+2023-06-13 17:53:28,871 INFO client.py Function send_message was called - args: (<socket.socket fd=420, family=2, type=1, proto=0, laddr=('127.0.0.1', 63050), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1686668008.8712578, 'type': 'status', 'user': {'account_name': 'kiki159', 'status': 'Online!'}}), kwargs: {}. It was called from function client.main()
+2023-06-13 17:53:29,374 ERROR client.py Something went wrong: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2023-06-13 17:53:40,772 ERROR client.py Something went wrong: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2023-06-13 17:57:13,946 INFO client.py IP-address: localhost, TCP-port: 7777
+2023-06-13 17:57:13,946 INFO client.py Function parse_params was called - args: (), kwargs: {}. It was called from function client.main()
+2023-06-13 17:57:13,962 INFO client.py Connected to server: 7777:localhost
+2023-06-13 17:57:13,962 INFO client.py Function connect_to_socket was called - args: (<__main__.Client object at 0x000001A8D9C84350>, 'localhost', 7777), kwargs: {}. It was called from function client.main()
+2023-06-13 17:57:13,962 INFO client.py Function create_message was called - args: (), kwargs: {'action': 'presence', 'type': 'status', 'user': {'account_name': 'kiki159', 'status': 'Online!'}}. It was called from function client.main()
+2023-06-13 17:57:13,962 INFO client.py Function send_message was called - args: (<socket.socket fd=356, family=2, type=1, proto=0, laddr=('127.0.0.1', 63955), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1686668233.962213, 'type': 'status', 'user': {'account_name': 'kiki159', 'status': 'Online!'}}), kwargs: {}. It was called from function client.main()
+2023-06-13 17:57:14,498 INFO client.py IP-address: localhost, TCP-port: 7777
+2023-06-13 17:57:14,502 INFO client.py Function parse_params was called - args: (), kwargs: {}. It was called from function client.main()
+2023-06-13 17:57:14,511 INFO client.py Connected to server: 7777:localhost
+2023-06-13 17:57:14,512 ERROR client.py Something went wrong: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2023-06-13 17:57:14,512 INFO client.py Function connect_to_socket was called - args: (<__main__.Client object at 0x00000286B3594350>, 'localhost', 7777), kwargs: {}. It was called from function client.main()
+2023-06-13 17:57:14,512 INFO client.py Function create_message was called - args: (), kwargs: {'action': 'presence', 'type': 'status', 'user': {'account_name': 'kiki159', 'status': 'Online!'}}. It was called from function client.main()
+2023-06-13 17:57:14,514 INFO client.py Function send_message was called - args: (<socket.socket fd=500, family=2, type=1, proto=0, laddr=('127.0.0.1', 63958), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1686668234.5121076, 'type': 'status', 'user': {'account_name': 'kiki159', 'status': 'Online!'}}), kwargs: {}. It was called from function client.main()
+2023-06-13 17:57:15,055 INFO client.py IP-address: localhost, TCP-port: 7777
+2023-06-13 17:57:15,055 INFO client.py Function parse_params was called - args: (), kwargs: {}. It was called from function client.main()
+2023-06-13 17:57:15,058 INFO client.py Connected to server: 7777:localhost
+2023-06-13 17:57:15,058 INFO client.py Function connect_to_socket was called - args: (<__main__.Client object at 0x000002E1F9CB4350>, 'localhost', 7777), kwargs: {}. It was called from function client.main()
+2023-06-13 17:57:15,058 ERROR client.py Something went wrong: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2023-06-13 17:57:15,058 INFO client.py Function create_message was called - args: (), kwargs: {'action': 'presence', 'type': 'status', 'user': {'account_name': 'kiki159', 'status': 'Online!'}}. It was called from function client.main()
+2023-06-13 17:57:15,058 INFO client.py Function send_message was called - args: (<socket.socket fd=472, family=2, type=1, proto=0, laddr=('127.0.0.1', 63961), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1686668235.058483, 'type': 'status', 'user': {'account_name': 'kiki159', 'status': 'Online!'}}), kwargs: {}. It was called from function client.main()
+2023-06-13 17:57:15,562 INFO client.py IP-address: localhost, TCP-port: 7777
+2023-06-13 17:57:15,562 INFO client.py Function parse_params was called - args: (), kwargs: {}. It was called from function client.main()
+2023-06-13 17:57:15,562 INFO client.py Connected to server: 7777:localhost
+2023-06-13 17:57:15,562 INFO client.py Function connect_to_socket was called - args: (<__main__.Client object at 0x0000022408C14350>, 'localhost', 7777), kwargs: {}. It was called from function client.main()
+2023-06-13 17:57:15,562 ERROR client.py Something went wrong: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2023-06-13 17:57:15,562 INFO client.py Function create_message was called - args: (), kwargs: {'action': 'presence', 'type': 'status', 'user': {'account_name': 'kiki159', 'status': 'Online!'}}. It was called from function client.main()
+2023-06-13 17:57:15,562 INFO client.py Function send_message was called - args: (<socket.socket fd=352, family=2, type=1, proto=0, laddr=('127.0.0.1', 63964), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1686668235.5629365, 'type': 'status', 'user': {'account_name': 'kiki159', 'status': 'Online!'}}), kwargs: {}. It was called from function client.main()
+2023-06-13 17:57:16,020 INFO client.py IP-address: localhost, TCP-port: 7777
+2023-06-13 17:57:16,020 INFO client.py Function parse_params was called - args: (), kwargs: {}. It was called from function client.main()
+2023-06-13 17:57:16,035 INFO client.py Connected to server: 7777:localhost
+2023-06-13 17:57:16,035 INFO client.py Function connect_to_socket was called - args: (<__main__.Client object at 0x000001DDC3E54350>, 'localhost', 7777), kwargs: {}. It was called from function client.main()
+2023-06-13 17:57:16,035 INFO client.py Function create_message was called - args: (), kwargs: {'action': 'presence', 'type': 'status', 'user': {'account_name': 'kiki159', 'status': 'Online!'}}. It was called from function client.main()
+2023-06-13 17:57:16,035 INFO client.py Function send_message was called - args: (<socket.socket fd=440, family=2, type=1, proto=0, laddr=('127.0.0.1', 63967), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1686668236.0359373, 'type': 'status', 'user': {'account_name': 'kiki159', 'status': 'Online!'}}), kwargs: {}. It was called from function client.main()
+2023-06-13 17:57:16,538 ERROR client.py Something went wrong: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2023-06-13 18:08:58,958 INFO client.py IP-address: localhost, TCP-port: 7777
+2023-06-13 18:08:58,958 INFO client.py Function parse_params was called - args: (), kwargs: {}. It was called from function client.main()
+2023-06-13 18:08:58,971 INFO client.py Connected to server: 7777:localhost
+2023-06-13 18:08:58,971 INFO client.py Function connect_to_socket was called - args: (<__main__.Client object at 0x0000029D86B34350>, 'localhost', 7777), kwargs: {}. It was called from function client.main()
+2023-06-13 18:08:58,971 INFO client.py Function create_message was called - args: (), kwargs: {'action': 'presence', 'type': 'status', 'user': {'account_name': 'kiki159', 'status': 'Online!'}}. It was called from function client.main()
+2023-06-13 18:08:58,971 INFO client.py Function send_message was called - args: (<socket.socket fd=360, family=2, type=1, proto=0, laddr=('127.0.0.1', 51686), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1686668938.9719625, 'type': 'status', 'user': {'account_name': 'kiki159', 'status': 'Online!'}}), kwargs: {}. It was called from function client.main()
+2023-06-13 18:08:59,516 INFO client.py IP-address: localhost, TCP-port: 7777
+2023-06-13 18:08:59,516 INFO client.py Function parse_params was called - args: (), kwargs: {}. It was called from function client.main()
+2023-06-13 18:08:59,531 INFO client.py Connected to server: 7777:localhost
+2023-06-13 18:08:59,531 INFO client.py Function connect_to_socket was called - args: (<__main__.Client object at 0x0000020B6CE14350>, 'localhost', 7777), kwargs: {}. It was called from function client.main()
+2023-06-13 18:08:59,531 INFO client.py Function create_message was called - args: (), kwargs: {'action': 'presence', 'type': 'status', 'user': {'account_name': 'kiki159', 'status': 'Online!'}}. It was called from function client.main()
+2023-06-13 18:08:59,531 INFO client.py Function send_message was called - args: (<socket.socket fd=516, family=2, type=1, proto=0, laddr=('127.0.0.1', 51691), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1686668939.53186, 'type': 'status', 'user': {'account_name': 'kiki159', 'status': 'Online!'}}), kwargs: {}. It was called from function client.main()
+2023-06-13 18:09:00,059 INFO client.py IP-address: localhost, TCP-port: 7777
+2023-06-13 18:09:00,059 INFO client.py Function parse_params was called - args: (), kwargs: {}. It was called from function client.main()
+2023-06-13 18:09:00,071 INFO client.py Connected to server: 7777:localhost
+2023-06-13 18:09:00,071 INFO client.py Function connect_to_socket was called - args: (<__main__.Client object at 0x000001E7F5EC4350>, 'localhost', 7777), kwargs: {}. It was called from function client.main()
+2023-06-13 18:09:00,071 ERROR client.py Something went wrong: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2023-06-13 18:09:00,071 INFO client.py Function create_message was called - args: (), kwargs: {'action': 'presence', 'type': 'status', 'user': {'account_name': 'kiki159', 'status': 'Online!'}}. It was called from function client.main()
+2023-06-13 18:09:00,071 INFO client.py Function send_message was called - args: (<socket.socket fd=300, family=2, type=1, proto=0, laddr=('127.0.0.1', 51692), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1686668940.0712886, 'type': 'status', 'user': {'account_name': 'kiki159', 'status': 'Online!'}}), kwargs: {}. It was called from function client.main()
+2023-06-13 18:09:00,544 INFO client.py IP-address: localhost, TCP-port: 7777
+2023-06-13 18:09:00,544 INFO client.py Function parse_params was called - args: (), kwargs: {}. It was called from function client.main()
+2023-06-13 18:09:00,560 INFO client.py Connected to server: 7777:localhost
+2023-06-13 18:09:00,560 INFO client.py Function connect_to_socket was called - args: (<__main__.Client object at 0x000001C44ACD4350>, 'localhost', 7777), kwargs: {}. It was called from function client.main()
+2023-06-13 18:09:00,560 INFO client.py Function create_message was called - args: (), kwargs: {'action': 'presence', 'type': 'status', 'user': {'account_name': 'kiki159', 'status': 'Online!'}}. It was called from function client.main()
+2023-06-13 18:09:00,560 INFO client.py Function send_message was called - args: (<socket.socket fd=508, family=2, type=1, proto=0, laddr=('127.0.0.1', 51697), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1686668940.5600247, 'type': 'status', 'user': {'account_name': 'kiki159', 'status': 'Online!'}}), kwargs: {}. It was called from function client.main()
+2023-06-13 18:09:00,970 INFO client.py IP-address: localhost, TCP-port: 7777
+2023-06-13 18:09:00,970 INFO client.py Function parse_params was called - args: (), kwargs: {}. It was called from function client.main()
+2023-06-13 18:09:00,987 INFO client.py Connected to server: 7777:localhost
+2023-06-13 18:09:00,987 ERROR client.py Something went wrong: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2023-06-13 18:09:00,987 INFO client.py Function connect_to_socket was called - args: (<__main__.Client object at 0x000001D436924350>, 'localhost', 7777), kwargs: {}. It was called from function client.main()
+2023-06-13 18:09:00,987 INFO client.py Function create_message was called - args: (), kwargs: {'action': 'presence', 'type': 'status', 'user': {'account_name': 'kiki159', 'status': 'Online!'}}. It was called from function client.main()
+2023-06-13 18:09:00,987 INFO client.py Function send_message was called - args: (<socket.socket fd=444, family=2, type=1, proto=0, laddr=('127.0.0.1', 51698), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1686668940.9874759, 'type': 'status', 'user': {'account_name': 'kiki159', 'status': 'Online!'}}), kwargs: {}. It was called from function client.main()
+2023-06-13 18:09:01,490 ERROR client.py Something went wrong: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
