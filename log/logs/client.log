@@ -1,29 +1,76 @@
-2023-06-03 21:41:28,399 DEBUG client_log_config.py Debug info
-2023-06-03 21:41:28,400 INFO client_log_config.py Info
-2023-06-03 21:41:28,400 ERROR client_log_config.py Error
-2023-06-03 21:41:28,400 CRITICAL client_log_config.py Critical error
-2023-06-03 22:47:25,469 INFO client.py IP-address: localhost, TCP-port: 8888
-2023-06-03 22:47:25,470 ERROR client.py Something went wrong: socket.connect() takes exactly one argument (2 given)
-2023-06-03 22:48:57,150 INFO client.py IP-address: localhost, TCP-port: 8888
-2023-06-03 22:48:57,152 ERROR client.py Something went wrong: str, bytes or bytearray expected, not int
-2023-06-03 22:49:27,664 INFO client.py IP-address: localhost, TCP-port: 8888
-2023-06-03 22:49:27,664 ERROR client.py Something went wrong: str, bytes or bytearray expected, not int
-2023-06-03 22:50:40,546 INFO client.py IP-address: localhost, TCP-port: 8888
-2023-06-03 22:50:40,546 ERROR client.py Something went wrong: str, bytes or bytearray expected, not int
-2023-06-03 22:51:56,765 INFO client.py IP-address: localhost, TCP-port: 7777
-2023-06-03 22:51:56,765 ERROR client.py Something went wrong: str, bytes or bytearray expected, not int
-2023-06-03 22:53:54,536 INFO client.py IP-address: localhost, TCP-port: 7777
-2023-06-03 22:53:54,541 INFO client.py Connected to server: 7777:localhost
-2023-06-03 22:53:54,542 INFO client.py The presence message ({'action': 'presence', 'time': 1685822034.528017, 'type': 'status', 'user': {'account_name': 'kiki159', 'status': 'Online!'}}) was sent to the server: 7777:localhost
-2023-06-03 22:54:16,290 INFO client.py IP-address: localhost, TCP-port: 8888
-2023-06-03 22:54:16,290 INFO client.py Connected to server: 8888:localhost
-2023-06-03 22:54:16,290 INFO client.py The presence message ({'action': 'presence', 'time': 1685822056.275206, 'type': 'status', 'user': {'account_name': 'kiki159', 'status': 'Online!'}}) was sent to the server: 8888:localhost
-2023-06-03 22:54:16,290 INFO client.py The response from the server was received: {'response': 200, 'alert': 'Подключение прошло успешно'}
-2023-06-06 17:53:52,311 INFO client.py IP-address: localhost, TCP-port: 8888
-2023-06-06 17:53:52,311 INFO client.py Function parse_params was called - args: (), kwargs: {}. It was called from function client.main()
-2023-06-06 17:53:52,320 INFO client.py Connected to server: 8888:localhost
-2023-06-06 17:53:52,320 INFO client.py Function send_message was called - args: (<socket.socket fd=400, family=2, type=1, proto=0, laddr=('127.0.0.1', 60647), raddr=('127.0.0.1', 8888)>, {'action': 'presence', 'time': 1686063232.303866, 'type': 'status', 'user': {'account_name': 'kiki159', 'status': 'Online!'}}), kwargs: {}. It was called from function client.main()
-2023-06-06 17:53:52,320 INFO client.py The presence message ({'action': 'presence', 'time': 1686063232.303866, 'type': 'status', 'user': {'account_name': 'kiki159', 'status': 'Online!'}}) was sent to the server: 8888:localhost
-2023-06-06 17:53:52,320 INFO client.py Function get_message was called - args: (<socket.socket fd=400, family=2, type=1, proto=0, laddr=('127.0.0.1', 60647), raddr=('127.0.0.1', 8888)>,), kwargs: {}. It was called from function client.main()
-2023-06-06 17:53:52,320 INFO client.py The response from the server was received: {'response': 200, 'alert': 'Подключение прошло успешно'}
-2023-06-06 17:53:52,320 INFO client.py Function main was called - args: (<__main__.Client object at 0x0000018C9C31E650>,), kwargs: {}. It was called from function client.main()
+2023-06-13 22:09:18,452 INFO client.py IP-address: localhost, TCP-port: 7777
+2023-06-13 22:09:18,453 INFO client.py Function parse_params was called - args: (), kwargs: {}. It was called from function client.main()
+2023-06-13 22:09:18,462 INFO client.py Connected to server: 7777:localhost
+2023-06-13 22:09:18,463 INFO client.py Function connect_to_socket was called - args: (<__main__.Client object at 0x00000208814F4490>, 'localhost', 7777), kwargs: {}. It was called from function client.main()
+2023-06-13 22:09:18,464 INFO client.py Function create_message was called - args: (), kwargs: {'action': 'presence', 'type': 'status', 'user': {'account_name': 'kiki159', 'status': 'Online!'}}. It was called from function client.main()
+2023-06-13 22:09:18,465 INFO client.py Function send_message was called - args: (<socket.socket fd=528, family=2, type=1, proto=0, laddr=('127.0.0.1', 62965), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1686683358.463726, 'type': 'status', 'user': {'account_name': 'kiki159', 'status': 'Online!'}}), kwargs: {}. It was called from function client.main()
+2023-06-13 22:09:18,976 INFO client.py Function get_message was called - args: (<socket.socket fd=528, family=2, type=1, proto=0, laddr=('127.0.0.1', 62965), raddr=('127.0.0.1', 7777)>,), kwargs: {}. It was called from function client.main()
+2023-06-13 22:09:18,976 INFO client.py The response from the server was received: {'ACTION': 'PRESENCE', 'TIME': 1686683358.463726, 'TYPE': 'STATUS', 'USER': {'ACCOUNT_NAME': 'KIKI159', 'STATUS': 'ONLINE!'}}
+2023-06-13 22:09:18,981 INFO client.py IP-address: localhost, TCP-port: 7777
+2023-06-13 22:09:18,982 INFO client.py Function parse_params was called - args: (), kwargs: {}. It was called from function client.main()
+2023-06-13 22:09:18,989 INFO client.py Connected to server: 7777:localhost
+2023-06-13 22:09:18,990 INFO client.py Function connect_to_socket was called - args: (<__main__.Client object at 0x000001D8E68E4490>, 'localhost', 7777), kwargs: {}. It was called from function client.main()
+2023-06-13 22:09:18,991 INFO client.py Function create_message was called - args: (), kwargs: {'action': 'presence', 'type': 'status', 'user': {'account_name': 'kiki159', 'status': 'Online!'}}. It was called from function client.main()
+2023-06-13 22:09:18,992 INFO client.py Function send_message was called - args: (<socket.socket fd=332, family=2, type=1, proto=0, laddr=('127.0.0.1', 62966), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1686683358.9917033, 'type': 'status', 'user': {'account_name': 'kiki159', 'status': 'Online!'}}), kwargs: {}. It was called from function client.main()
+2023-06-13 22:09:19,502 INFO client.py IP-address: localhost, TCP-port: 7777
+2023-06-13 22:09:19,503 INFO client.py Function parse_params was called - args: (), kwargs: {}. It was called from function client.main()
+2023-06-13 22:09:19,508 INFO client.py Function get_message was called - args: (<socket.socket fd=528, family=2, type=1, proto=0, laddr=('127.0.0.1', 62965), raddr=('127.0.0.1', 7777)>,), kwargs: {}. It was called from function client.main()
+2023-06-13 22:09:19,508 INFO client.py The message was received: {'ACTION': 'PRESENCE', 'TIME': 1686683358.9917033, 'TYPE': 'STATUS', 'USER': {'ACCOUNT_NAME': 'KIKI159', 'STATUS': 'ONLINE!'}}
+2023-06-13 22:09:19,509 INFO client.py Function get_message was called - args: (<socket.socket fd=332, family=2, type=1, proto=0, laddr=('127.0.0.1', 62966), raddr=('127.0.0.1', 7777)>,), kwargs: {}. It was called from function client.main()
+2023-06-13 22:09:19,509 INFO client.py The response from the server was received: {'ACTION': 'PRESENCE', 'TIME': 1686683358.9917033, 'TYPE': 'STATUS', 'USER': {'ACCOUNT_NAME': 'KIKI159', 'STATUS': 'ONLINE!'}}
+2023-06-13 22:09:19,515 INFO client.py Connected to server: 7777:localhost
+2023-06-13 22:09:19,515 INFO client.py Function connect_to_socket was called - args: (<__main__.Client object at 0x000001F8D90B4490>, 'localhost', 7777), kwargs: {}. It was called from function client.main()
+2023-06-13 22:09:19,516 INFO client.py Function create_message was called - args: (), kwargs: {'action': 'presence', 'type': 'status', 'user': {'account_name': 'kiki159', 'status': 'Online!'}}. It was called from function client.main()
+2023-06-13 22:09:19,517 INFO client.py Function send_message was called - args: (<socket.socket fd=472, family=2, type=1, proto=0, laddr=('127.0.0.1', 62971), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1686683359.5164711, 'type': 'status', 'user': {'account_name': 'kiki159', 'status': 'Online!'}}), kwargs: {}. It was called from function client.main()
+2023-06-13 22:09:20,019 INFO client.py Function get_message was called - args: (<socket.socket fd=528, family=2, type=1, proto=0, laddr=('127.0.0.1', 62965), raddr=('127.0.0.1', 7777)>,), kwargs: {}. It was called from function client.main()
+2023-06-13 22:09:20,019 INFO client.py The message was received: {'ACTION': 'PRESENCE', 'TIME': 1686683359.5164711, 'TYPE': 'STATUS', 'USER': {'ACCOUNT_NAME': 'KIKI159', 'STATUS': 'ONLINE!'}}
+2023-06-13 22:09:20,020 INFO client.py Function get_message was called - args: (<socket.socket fd=332, family=2, type=1, proto=0, laddr=('127.0.0.1', 62966), raddr=('127.0.0.1', 7777)>,), kwargs: {}. It was called from function client.main()
+2023-06-13 22:09:20,020 INFO client.py The message was received: {'ACTION': 'PRESENCE', 'TIME': 1686683359.5164711, 'TYPE': 'STATUS', 'USER': {'ACCOUNT_NAME': 'KIKI159', 'STATUS': 'ONLINE!'}}
+2023-06-13 22:09:20,021 INFO client.py Function get_message was called - args: (<socket.socket fd=472, family=2, type=1, proto=0, laddr=('127.0.0.1', 62971), raddr=('127.0.0.1', 7777)>,), kwargs: {}. It was called from function client.main()
+2023-06-13 22:09:20,021 INFO client.py The response from the server was received: {'ACTION': 'PRESENCE', 'TIME': 1686683359.5164711, 'TYPE': 'STATUS', 'USER': {'ACCOUNT_NAME': 'KIKI159', 'STATUS': 'ONLINE!'}}
+2023-06-13 22:09:20,047 INFO client.py IP-address: localhost, TCP-port: 7777
+2023-06-13 22:09:20,049 INFO client.py Function parse_params was called - args: (), kwargs: {}. It was called from function client.main()
+2023-06-13 22:09:20,060 INFO client.py Connected to server: 7777:localhost
+2023-06-13 22:09:20,061 INFO client.py Function connect_to_socket was called - args: (<__main__.Client object at 0x000001E05F954490>, 'localhost', 7777), kwargs: {}. It was called from function client.main()
+2023-06-13 22:09:20,062 INFO client.py Function create_message was called - args: (), kwargs: {'action': 'presence', 'type': 'status', 'user': {'account_name': 'kiki159', 'status': 'Online!'}}. It was called from function client.main()
+2023-06-13 22:09:20,063 INFO client.py Function send_message was called - args: (<socket.socket fd=320, family=2, type=1, proto=0, laddr=('127.0.0.1', 62972), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1686683360.062537, 'type': 'status', 'user': {'account_name': 'kiki159', 'status': 'Online!'}}), kwargs: {}. It was called from function client.main()
+2023-06-13 22:09:20,494 INFO client.py IP-address: localhost, TCP-port: 7777
+2023-06-13 22:09:20,495 INFO client.py Function parse_params was called - args: (), kwargs: {}. It was called from function client.main()
+2023-06-13 22:09:20,503 INFO client.py Connected to server: 7777:localhost
+2023-06-13 22:09:20,504 INFO client.py Function connect_to_socket was called - args: (<__main__.Client object at 0x00000295C0F64490>, 'localhost', 7777), kwargs: {}. It was called from function client.main()
+2023-06-13 22:09:20,504 INFO client.py Function create_message was called - args: (), kwargs: {'action': 'presence', 'type': 'status', 'user': {'account_name': 'kiki159', 'status': 'Online!'}}. It was called from function client.main()
+2023-06-13 22:09:20,505 INFO client.py Function send_message was called - args: (<socket.socket fd=464, family=2, type=1, proto=0, laddr=('127.0.0.1', 62977), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1686683360.5047379, 'type': 'status', 'user': {'account_name': 'kiki159', 'status': 'Online!'}}), kwargs: {}. It was called from function client.main()
+2023-06-13 22:09:20,505 INFO client.py Function get_message was called - args: (<socket.socket fd=528, family=2, type=1, proto=0, laddr=('127.0.0.1', 62965), raddr=('127.0.0.1', 7777)>,), kwargs: {}. It was called from function client.main()
+2023-06-13 22:09:20,506 INFO client.py The message was received: {'ACTION': 'PRESENCE', 'TIME': 1686683360.062537, 'TYPE': 'STATUS', 'USER': {'ACCOUNT_NAME': 'KIKI159', 'STATUS': 'ONLINE!'}}
+2023-06-13 22:09:20,506 INFO client.py Function get_message was called - args: (<socket.socket fd=332, family=2, type=1, proto=0, laddr=('127.0.0.1', 62966), raddr=('127.0.0.1', 7777)>,), kwargs: {}. It was called from function client.main()
+2023-06-13 22:09:20,506 INFO client.py The message was received: {'ACTION': 'PRESENCE', 'TIME': 1686683360.062537, 'TYPE': 'STATUS', 'USER': {'ACCOUNT_NAME': 'KIKI159', 'STATUS': 'ONLINE!'}}
+2023-06-13 22:09:20,507 INFO client.py Function get_message was called - args: (<socket.socket fd=472, family=2, type=1, proto=0, laddr=('127.0.0.1', 62971), raddr=('127.0.0.1', 7777)>,), kwargs: {}. It was called from function client.main()
+2023-06-13 22:09:20,507 INFO client.py The message was received: {'ACTION': 'PRESENCE', 'TIME': 1686683360.062537, 'TYPE': 'STATUS', 'USER': {'ACCOUNT_NAME': 'KIKI159', 'STATUS': 'ONLINE!'}}
+2023-06-13 22:09:20,508 INFO client.py Function get_message was called - args: (<socket.socket fd=320, family=2, type=1, proto=0, laddr=('127.0.0.1', 62972), raddr=('127.0.0.1', 7777)>,), kwargs: {}. It was called from function client.main()
+2023-06-13 22:09:20,508 INFO client.py The response from the server was received: {'ACTION': 'PRESENCE', 'TIME': 1686683360.062537, 'TYPE': 'STATUS', 'USER': {'ACCOUNT_NAME': 'KIKI159', 'STATUS': 'ONLINE!'}}
+2023-06-13 22:09:20,508 INFO client.py Function get_message was called - args: (<socket.socket fd=464, family=2, type=1, proto=0, laddr=('127.0.0.1', 62977), raddr=('127.0.0.1', 7777)>,), kwargs: {}. It was called from function client.main()
+2023-06-13 22:09:20,508 INFO client.py The response from the server was received: {'ACTION': 'PRESENCE', 'TIME': 1686683360.062537, 'TYPE': 'STATUS', 'USER': {'ACCOUNT_NAME': 'KIKI159', 'STATUS': 'ONLINE!'}}
+2023-06-13 22:09:21,013 INFO client.py Function get_message was called - args: (<socket.socket fd=528, family=2, type=1, proto=0, laddr=('127.0.0.1', 62965), raddr=('127.0.0.1', 7777)>,), kwargs: {}. It was called from function client.main()
+2023-06-13 22:09:21,013 INFO client.py The message was received: {'ACTION': 'PRESENCE', 'TIME': 1686683360.5047379, 'TYPE': 'STATUS', 'USER': {'ACCOUNT_NAME': 'KIKI159', 'STATUS': 'ONLINE!'}}
+2023-06-13 22:09:21,013 INFO client.py Function get_message was called - args: (<socket.socket fd=332, family=2, type=1, proto=0, laddr=('127.0.0.1', 62966), raddr=('127.0.0.1', 7777)>,), kwargs: {}. It was called from function client.main()
+2023-06-13 22:09:21,014 INFO client.py The message was received: {'ACTION': 'PRESENCE', 'TIME': 1686683360.5047379, 'TYPE': 'STATUS', 'USER': {'ACCOUNT_NAME': 'KIKI159', 'STATUS': 'ONLINE!'}}
+2023-06-13 22:09:21,014 INFO client.py Function get_message was called - args: (<socket.socket fd=472, family=2, type=1, proto=0, laddr=('127.0.0.1', 62971), raddr=('127.0.0.1', 7777)>,), kwargs: {}. It was called from function client.main()
+2023-06-13 22:09:21,015 INFO client.py The message was received: {'ACTION': 'PRESENCE', 'TIME': 1686683360.5047379, 'TYPE': 'STATUS', 'USER': {'ACCOUNT_NAME': 'KIKI159', 'STATUS': 'ONLINE!'}}
+2023-06-13 22:09:23,112 INFO client.py Function create_message was called - args: (), kwargs: {'action': 'message', 'body': 'kjdbfhwjf'}. It was called from function client.main()
+2023-06-13 22:09:23,113 INFO client.py Function send_message was called - args: (<socket.socket fd=464, family=2, type=1, proto=0, laddr=('127.0.0.1', 62977), raddr=('127.0.0.1', 7777)>, {'action': 'message', 'time': 1686683363.1123824, 'body': 'kjdbfhwjf'}), kwargs: {}. It was called from function client.main()
+2023-06-13 22:09:23,113 INFO client.py Message {'action': 'message', 'time': 1686683363.1123824, 'body': 'kjdbfhwjf'} was sent
+2023-06-13 22:09:23,541 INFO client.py Function get_message was called - args: (<socket.socket fd=528, family=2, type=1, proto=0, laddr=('127.0.0.1', 62965), raddr=('127.0.0.1', 7777)>,), kwargs: {}. It was called from function client.main()
+2023-06-13 22:09:23,542 INFO client.py The message was received: {'ACTION': 'MESSAGE', 'TIME': 1686683363.1123824, 'BODY': 'KJDBFHWJF'}
+2023-06-13 22:09:23,542 INFO client.py Function get_message was called - args: (<socket.socket fd=332, family=2, type=1, proto=0, laddr=('127.0.0.1', 62966), raddr=('127.0.0.1', 7777)>,), kwargs: {}. It was called from function client.main()
+2023-06-13 22:09:23,543 INFO client.py The message was received: {'ACTION': 'MESSAGE', 'TIME': 1686683363.1123824, 'BODY': 'KJDBFHWJF'}
+2023-06-13 22:09:23,543 INFO client.py Function get_message was called - args: (<socket.socket fd=472, family=2, type=1, proto=0, laddr=('127.0.0.1', 62971), raddr=('127.0.0.1', 7777)>,), kwargs: {}. It was called from function client.main()
+2023-06-13 22:09:23,544 INFO client.py The message was received: {'ACTION': 'MESSAGE', 'TIME': 1686683363.1123824, 'BODY': 'KJDBFHWJF'}
+2023-06-13 22:09:33,827 INFO client.py Function create_message was called - args: (), kwargs: {'action': 'message', 'body': ''}. It was called from function client.main()
+2023-06-13 22:09:33,827 INFO client.py Function send_message was called - args: (<socket.socket fd=464, family=2, type=1, proto=0, laddr=('127.0.0.1', 62977), raddr=('127.0.0.1', 7777)>, {'action': 'message', 'time': 1686683373.8269901, 'body': ''}), kwargs: {}. It was called from function client.main()
+2023-06-13 22:09:33,828 INFO client.py Message {'action': 'message', 'time': 1686683373.8269901, 'body': ''} was sent
+2023-06-13 22:09:34,270 INFO client.py Function get_message was called - args: (<socket.socket fd=528, family=2, type=1, proto=0, laddr=('127.0.0.1', 62965), raddr=('127.0.0.1', 7777)>,), kwargs: {}. It was called from function client.main()
+2023-06-13 22:09:34,270 INFO client.py The message was received: {'ACTION': 'MESSAGE', 'TIME': 1686683373.8269901, 'BODY': ''}
+2023-06-13 22:09:34,270 INFO client.py Function get_message was called - args: (<socket.socket fd=332, family=2, type=1, proto=0, laddr=('127.0.0.1', 62966), raddr=('127.0.0.1', 7777)>,), kwargs: {}. It was called from function client.main()
+2023-06-13 22:09:34,271 INFO client.py The message was received: {'ACTION': 'MESSAGE', 'TIME': 1686683373.8269901, 'BODY': ''}
+2023-06-13 22:09:34,271 INFO client.py Function get_message was called - args: (<socket.socket fd=472, family=2, type=1, proto=0, laddr=('127.0.0.1', 62971), raddr=('127.0.0.1', 7777)>,), kwargs: {}. It was called from function client.main()
+2023-06-13 22:09:34,272 INFO client.py The message was received: {'ACTION': 'MESSAGE', 'TIME': 1686683373.8269901, 'BODY': ''}
