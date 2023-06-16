@@ -5,7 +5,7 @@ import os
 import time
 
 sys.path.append(os.getcwd())
-from utils import Utils
+from app.utils import Utils
 
 
 class TestSocket:
