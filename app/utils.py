@@ -18,11 +18,13 @@ class Users:
 
     def delete_user(self, sock, disconnect=False):
         username = self.get_username_by_sock(sock)
+
+        self.sockets.remove(sock)
         if disconnect:
             sock.close()
         if username:
             del self.usernames_sockets[username]
-        self.sockets.remove(sock)
+        logger.info(f'Deleted user {username}')
 
 
 class ProcessClientMessageMixin:

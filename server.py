@@ -47,14 +47,13 @@ class Server(Utils, ProcessClientMessageMixin):
                     if current_client_name not in self.users.usernames_sockets.keys():
                         self.users.usernames_sockets[current_client_name] = sock
                         # status_code_message = self.get_status_code_message(message)
-                        response_message = self.make_message_template("login", **{"alert": "ok"})
+                        response_message = self.make_message_template("login", alert="ok")
                         self.send_message(sock, response_message)
                         logger.info(f'Response message was sent: {response_message}')
                     else:
-                        # status_code_message = self.get_status_code_message(message, status='error',
-                        #                                                    error='User with this username already '
-                        #                                                          'exists')
-                        response_message = self.make_message_template("login", **{"alert": "error"})
+                        # status_code_message = self.get_status_code_message(message, status='error', error='User
+                        # with this username already exists')
+                        response_message = self.make_message_template("login", alert="error")
                         self.send_message(sock, response_message)
                         logger.info(f'Response message was sent: {response_message}')
                         self.users.delete_user(sock)
@@ -63,9 +62,9 @@ class Server(Utils, ProcessClientMessageMixin):
                 elif message["action"] == "msg":
                     self.messages.append(message)
                     return
-                # elif message["action"] == "exit":
-                #     self.users.delete_user(sock, disconnect=True)
-                #     return
+                elif message["action"] == "quit":
+                    self.users.delete_user(sock, disconnect=True)
+                    return
                 else:
                     response_message = self.get_status_code_message('error', error='Incorrect request')
                     self.send_message(sock, response_message)
@@ -82,13 +81,13 @@ class Server(Utils, ProcessClientMessageMixin):
             if destination_username in self.users.usernames_sockets and \
                     self.users.usernames_sockets[destination_username] in send_data_clients_list:
                 self.send_message(self.users.usernames_sockets[destination_username], message)
-                logger.info(f'A message was sent to user: {destination_username} from user {message["sender"]}')
+                logger.info(f'A message was sent to user {destination_username}'
+                            f'from user {message["user"]["username"]}')
             elif destination_username in self.users.usernames_sockets and \
                     self.users.usernames_sockets[destination_username] not in send_data_clients_list:
                 raise ConnectionError
             else:
                 logger.error(f'User {destination_username} is not registered, message can not be sent')
-
 
     @Log()
     def main(self):

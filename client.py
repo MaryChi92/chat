@@ -1,5 +1,4 @@
 import sys
-import threading
 import time
 from socket import AF_INET, SOCK_STREAM, socket
 from argparse import ArgumentParser
@@ -78,6 +77,7 @@ class Client(Utils):
 
     @Log()
     def incoming_stream(self):
+
         while message := self.get_and_parse_message():
             print(message)
 
@@ -85,6 +85,11 @@ class Client(Utils):
     def outgoing_stream(self):
         while command := input('Enter "message" to send a message or "Q" to quit: '):
             if command == 'Q':
+                quit_message = self.make_message_template(action="quit", user={"username": self.username})
+                self.send_message(self.sock, quit_message)
+                print('Disconnecting')
+                logger.info("Disconnecting due to client's request")
+                time.sleep(TIMEOUT)
                 break
             elif command == "message":
                 message = input('Text your message here: ')
