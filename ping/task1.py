@@ -10,8 +10,8 @@ hosts_list = [ipv4_1, ipv4_2, ipv4_3]
 def host_ping(hosts_list):
     for host in hosts_list:
         if not Popen(f'ping {host}', stdout=PIPE):
-            print('Узел недоступен')
-        print('Узел доступен')
+            print(f'Узел {host} недоступен')
+        print(f'Узел {host} доступен')
 
 
 host_ping(hosts_list)

@@ -13,11 +13,11 @@ def host_range_ping(host, number):
         if last_octet + number <= 255:
             for i in range(number):
                 if not Popen(f'ping {host}', stdout=PIPE):
-                    print('Узел недоступен')
-                print('Узел доступен')
+                    print(f'Узел {host} недоступен')
+                print(f'Узел {host} доступен')
                 host += 1
         else:
-            print('Sorry, the range is too broad')
+            print('Слишком широкий диапазон')
 
 
 host_range_ping(ipv4_1, 5)
