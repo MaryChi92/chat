@@ -8,29 +8,58 @@ from app.config import DEFAULT_PORT, DEFAULT_HOST, MAX_CONNECTIONS, TIMEOUT
 from app.utils import ProcessClientMessageMixin, Users, Utils
 from log.server_log_config import logger
 from log.deco_log_config import Log
+from descriptor import Port
+from metaclasses import BaseVerifier
 
 
-class Server(Utils, ProcessClientMessageMixin):
-    def __init__(self):
+class ServerVerifier(BaseVerifier):
+    def __init__(cls, name, bases, namespaces):
+        super().__init__(name, bases, namespaces)
+
+        if "connect" in cls.attrs[f"_{name}_attrs"]:
+            raise TypeError("Connect method is not allowed")
+
+
+def parse_params():
+    parser = ArgumentParser()
+    parser.add_argument('-p', type=int, default=DEFAULT_PORT, help='TCP-port')
+    parser.add_argument('-a', default=DEFAULT_HOST, type=str, help='IP-address')
+    namespace = parser.parse_args(sys.argv[1:])
+    p_host = namespace.a
+    p_port = namespace.p
+    logger.info(
+        f"IP-address: {p_host if p_host else DEFAULT_PORT}, TCP-port: {p_port if p_port else DEFAULT_HOST}"
+    )
+    return p_host, p_port
+
+
+class Server(Utils, ProcessClientMessageMixin, metaclass=ServerVerifier):
+    port = Port()
+
+    def __init__(self, host, port):
+        self.host = host
+        self.port = port
+
         self.users = Users()
         self.messages = deque()
 
-    @staticmethod
-    @Log()
-    def parse_params():
-        parser = ArgumentParser()
-        parser.add_argument('-p', type=int, default=DEFAULT_PORT, help='TCP-port')
-        parser.add_argument('-a', default=DEFAULT_HOST, type=str, help='IP-address')
-        args = parser.parse_args()
-        logger.info(
-            f"IP-address: {args.a if args.a else DEFAULT_PORT}, TCP-port: {args.p if args.p else DEFAULT_HOST}"
-        )
-        return args.a, args.p
+    # @staticmethod
+    # @Log()
+    # def parse_params():
+    #     parser = ArgumentParser()
+    #     parser.add_argument('-p', type=int, default=DEFAULT_PORT, help='TCP-port')
+    #     parser.add_argument('-a', default=DEFAULT_HOST, type=str, help='IP-address')
+    #     args = parser.parse_args()
+    #     logger.info(
+    #         f"IP-address: {args.a if args.a else DEFAULT_PORT}, TCP-port: {args.p if args.p else DEFAULT_HOST}"
+    #     )
+    #     return args.a, args.p
 
     @Log()
     def init_socket(self):
         sock = socket(AF_INET, SOCK_STREAM)
-        sock.bind(self.parse_params())
+        # address, self.port = self.parse_params
+        sock.bind((self.host, self.port))
         sock.settimeout(TIMEOUT)
         sock.listen(MAX_CONNECTIONS)
         logger.info(f'Socket was successfully created')
@@ -92,14 +121,14 @@ class Server(Utils, ProcessClientMessageMixin):
     @Log()
     def main(self):
         try:
-            sock = self.init_socket()
+            self.sock = self.init_socket()
         except Exception as e:
             logger.error(f'Something went wrong: {e}')
             sys.exit(1)
 
         while True:
             try:
-                client, addr = sock.accept()
+                client, addr = self.sock.accept()
             except OSError:
                 pass
             else:
@@ -124,5 +153,6 @@ class Server(Utils, ProcessClientMessageMixin):
 
 
 if __name__ == '__main__':
-    server = Server()
+    c_host, c_port = parse_params()
+    server = Server(c_host, c_port)
     server.main()
