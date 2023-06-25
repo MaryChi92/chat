@@ -8,9 +8,23 @@ from app.config import DEFAULT_PORT, DEFAULT_HOST, TIMEOUT
 from app.utils import Utils
 from log.client_log_config import logger
 from log.deco_log_config import Log
+from metaclasses import BaseVerifier
 
 
-class Client(Utils):
+class ClientVerifier(BaseVerifier):
+    def __init__(cls, name, bases, namespaces):
+        super().__init__(name, bases, namespaces)
+
+        for attr in namespaces.values():
+            if isinstance(attr, socket):
+                raise TypeError("Socket shouldn't be created at class level")
+
+        params = cls.attrs[f"_{name}_attrs"]
+        if "accept" in params or "listen" in params:
+            raise TypeError("Accept or listen methods are not allowed")
+
+
+class Client(Utils, metaclass=ClientVerifier):
     def __init__(self):
         self.username = None
 
@@ -45,8 +59,9 @@ class Client(Utils):
             return f'{message["body"]}'
 
     @Log()
-    def connect_to_socket(self, addr, port):
+    def connect_to_socket(self):
         sock = socket(AF_INET, SOCK_STREAM)
+        addr, port = self.parse_params()
         sock.connect((addr, port))
         logger.info(f'Connected to server: {port}:{addr}')
         return sock
@@ -77,7 +92,6 @@ class Client(Utils):
 
     @Log()
     def incoming_stream(self):
-
         while message := self.get_and_parse_message():
             print(message)
 
@@ -104,11 +118,9 @@ class Client(Utils):
                 )
 
     @Log()
-    def main(self):
-        addr, port = self.parse_params()
+    def run(self):
         try:
-            self.sock = self.connect_to_socket(addr, port)
-            self.set_username()
+            self.sock = self.connect_to_socket()
         except Exception as e:
             logger.critical(f'Something went wrong: {e}')
             sys.exit(1)
@@ -116,7 +128,7 @@ class Client(Utils):
 
 if __name__ == '__main__':
     client = Client()
-    client.main()
+    client.run()
     client.set_username()
 
     receiver = Thread(target=client.incoming_stream)

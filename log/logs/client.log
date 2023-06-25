@@ -446,3 +446,173 @@
 2023-06-19 12:34:53,514 INFO client.py Function send_message was called - args: (<socket.socket fd=452, family=2, type=1, proto=0, laddr=('127.0.0.1', 49875), raddr=('127.0.0.1', 7777)>, {'action': 'quit', 'time': 1687167293.5132716, 'user': {'username': 'Piter Pen'}}), kwargs: {}. It was called from function self._bootstrap_inner()
 2023-06-19 12:34:53,515 INFO client.py Disconnecting due to client's request
 2023-06-19 12:34:54,516 INFO threading.py Function outgoing_stream was called - args: (<__main__.Client object at 0x000001D2848A2F10>,), kwargs: {}. It was called from function self._bootstrap_inner()
+2023-06-21 23:12:33,569 INFO client.py IP-address: localhost, TCP-port: 7777
+2023-06-21 23:12:33,573 INFO client.py Function parse_params was called - args: (), kwargs: {}. It was called from function client.main()
+2023-06-21 23:12:35,614 CRITICAL client.py Something went wrong: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение
+2023-06-21 23:18:23,564 INFO client.py IP-address: localhost, TCP-port: 7777
+2023-06-21 23:18:23,564 INFO client.py Function parse_params was called - args: (), kwargs: {}. It was called from function client.main()
+2023-06-21 23:18:25,596 CRITICAL client.py Something went wrong: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение
+2023-06-21 23:29:50,042 INFO client.py IP-address: localhost, TCP-port: 7777
+2023-06-21 23:29:50,043 INFO client.py Function parse_params was called - args: (), kwargs: {}. It was called from function client.main()
+2023-06-21 23:29:52,078 CRITICAL client.py Something went wrong: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение
+2023-06-23 09:41:35,090 INFO client.py IP-address: localhost, TCP-port: 7777
+2023-06-23 09:41:35,105 INFO client.py Function parse_params was called - args: (), kwargs: {}. It was called from function client.main()
+2023-06-23 09:41:37,157 CRITICAL client.py Something went wrong: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение
+2023-06-23 09:41:42,262 INFO client.py IP-address: localhost, TCP-port: 7777
+2023-06-23 09:41:42,264 INFO client.py Function parse_params was called - args: (), kwargs: {}. It was called from function client.main()
+2023-06-23 09:41:44,333 CRITICAL client.py Something went wrong: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение
+2023-06-23 10:13:28,042 INFO client.py IP-address: localhost, TCP-port: 7777
+2023-06-23 10:13:28,043 INFO client.py Function parse_params was called - args: (), kwargs: {}. It was called from function client.main()
+2023-06-23 10:13:30,071 CRITICAL client.py Something went wrong: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение
+2023-06-23 11:19:19,595 INFO client.py IP-address: localhost, TCP-port: 7777
+2023-06-23 11:19:19,598 INFO client.py Function parse_params was called - args: (), kwargs: {}. It was called from function client.main()
+2023-06-23 11:19:21,654 CRITICAL client.py Something went wrong: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение
+2023-06-23 11:19:38,222 INFO client.py IP-address: localhost, TCP-port: 7777
+2023-06-23 11:19:38,223 INFO client.py Function parse_params was called - args: (), kwargs: {}. It was called from function client.main()
+2023-06-23 11:19:40,246 CRITICAL client.py Something went wrong: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение
+2023-06-23 11:21:31,332 INFO client.py IP-address: localhost, TCP-port: 7777
+2023-06-23 11:21:31,333 INFO client.py Function parse_params was called - args: (), kwargs: {}. It was called from function client.main()
+2023-06-23 11:21:33,388 CRITICAL client.py Something went wrong: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение
+2023-06-23 11:21:45,607 INFO client.py IP-address: localhost, TCP-port: 7777
+2023-06-23 11:21:45,608 INFO client.py Function parse_params was called - args: (), kwargs: {}. It was called from function client.main()
+2023-06-23 11:21:47,636 CRITICAL client.py Something went wrong: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение
+2023-06-23 11:44:20,636 INFO client.py IP-address: localhost, TCP-port: 7777
+2023-06-23 11:44:20,639 INFO client.py Function parse_params was called - args: (), kwargs: {}. It was called from function client.main()
+2023-06-23 11:44:22,668 CRITICAL client.py Something went wrong: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение
+2023-06-23 12:12:48,663 INFO client.py IP-address: localhost, TCP-port: 7777
+2023-06-23 12:12:48,664 INFO client.py Function parse_params was called - args: (), kwargs: {}. It was called from function client.main()
+2023-06-23 12:12:48,674 INFO client.py Connected to server: 7777:localhost
+2023-06-23 12:12:48,675 INFO client.py Function connect_to_socket was called - args: (<__main__.Client object at 0x0000016D6EBB39D0>, 'localhost', 7777), kwargs: {}. It was called from function client.main()
+2023-06-23 12:12:57,098 INFO client.py Creating message from user: Clown
+2023-06-23 12:12:57,099 INFO client.py Function create_message was called - args: (<__main__.Client object at 0x0000016D6EBB39D0>,), kwargs: {'action': 'presence', 'type': 'status'}. It was called from function client.main()
+2023-06-23 12:12:57,100 INFO client.py Function send_message was called - args: (<socket.socket fd=492, family=2, type=1, proto=0, laddr=('127.0.0.1', 51501), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1687511577.0996547, 'user': {'username': 'Clown', 'status': 'online'}, 'type': 'status'}), kwargs: {}. It was called from function client.main()
+2023-06-23 12:12:57,742 INFO client.py Function get_message was called - args: (<socket.socket fd=492, family=2, type=1, proto=0, laddr=('127.0.0.1', 51501), raddr=('127.0.0.1', 7777)>,), kwargs: {}. It was called from function client.main()
+2023-06-23 12:12:57,744 INFO client.py The response from the server was received: {'action': 'login', 'time': 1687511577.7428522, 'alert': 'ok'}
+2023-06-23 12:12:57,744 INFO client.py Parsing message from the server: {'action': 'login', 'time': 1687511577.7428522, 'alert': 'ok'}
+2023-06-23 12:12:57,745 INFO client.py Function parse_message was called - args: (<__main__.Client object at 0x0000016D6EBB39D0>, {'action': 'login', 'time': 1687511577.7428522, 'alert': 'ok'}), kwargs: {}. It was called from function client.main()
+2023-06-23 12:12:57,746 INFO client.py Function set_username was called - args: (<__main__.Client object at 0x0000016D6EBB39D0>,), kwargs: {}. It was called from function client.main()
+2023-06-23 12:12:57,747 INFO client.py Function main was called - args: (<__main__.Client object at 0x0000016D6EBB39D0>,), kwargs: {}. It was called from function client.main()
+2023-06-23 12:12:57,747 INFO client.py Function set_username was called - args: (<__main__.Client object at 0x0000016D6EBB39D0>,), kwargs: {}. It was called from function client.set_username()
+2023-06-23 12:13:14,354 INFO client.py Creating message from user: Clown
+2023-06-23 12:13:14,367 INFO client.py Function create_message was called - args: (<__main__.Client object at 0x0000016D6EBB39D0>,), kwargs: {'action': 'msg', 'body': 'hi', 'to_user': 'Clown'}. It was called from function self._bootstrap_inner()
+2023-06-23 12:13:14,369 INFO client.py Function send_message was called - args: (<socket.socket fd=492, family=2, type=1, proto=0, laddr=('127.0.0.1', 51501), raddr=('127.0.0.1', 7777)>, {'action': 'msg', 'time': 1687511594.3547196, 'user': {'username': 'Clown', 'status': 'online'}, 'body': 'hi', 'to_user': 'Clown'}), kwargs: {}. It was called from function self._bootstrap_inner()
+2023-06-23 12:13:14,886 INFO client.py Function get_message was called - args: (<socket.socket fd=492, family=2, type=1, proto=0, laddr=('127.0.0.1', 51501), raddr=('127.0.0.1', 7777)>,), kwargs: {}. It was called from function self._bootstrap_inner()
+2023-06-23 12:13:14,887 INFO client.py The message was received: {'action': 'msg', 'time': 1687511594.3547196, 'user': {'username': 'Clown', 'status': 'online'}, 'body': 'hi', 'to_user': 'Clown'}
+2023-06-23 12:13:14,887 INFO client.py Parsing message from the server: {'action': 'msg', 'time': 1687511594.3547196, 'user': {'username': 'Clown', 'status': 'online'}, 'body': 'hi', 'to_user': 'Clown'}
+2023-06-23 12:13:14,888 INFO client.py Function parse_message was called - args: (<__main__.Client object at 0x0000016D6EBB39D0>, {'action': 'msg', 'time': 1687511594.3547196, 'user': {'username': 'Clown', 'status': 'online'}, 'body': 'hi', 'to_user': 'Clown'}), kwargs: {}. It was called from function self._bootstrap_inner()
+2023-06-23 12:13:14,888 INFO client.py Function get_and_parse_message was called - args: (<__main__.Client object at 0x0000016D6EBB39D0>,), kwargs: {}. It was called from function self._bootstrap_inner()
+2023-06-23 12:26:08,579 INFO client.py IP-address: localhost, TCP-port: 7777
+2023-06-23 12:26:08,581 INFO client.py Function parse_params was called - args: (), kwargs: {}. It was called from function client.main()
+2023-06-23 12:26:10,617 CRITICAL client.py Something went wrong: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение
+2023-06-23 12:27:09,558 INFO client.py IP-address: localhost, TCP-port: 7777
+2023-06-23 12:27:09,559 INFO client.py Function parse_params was called - args: (), kwargs: {}. It was called from function client.main()
+2023-06-23 12:27:11,592 CRITICAL client.py Something went wrong: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение
+2023-06-23 12:28:06,083 INFO client.py IP-address: localhost, TCP-port: 7777
+2023-06-23 12:28:06,084 INFO client.py Function parse_params was called - args: (), kwargs: {}. It was called from function client.main()
+2023-06-23 12:39:50,605 INFO client.py IP-address: localhost, TCP-port: 7777
+2023-06-23 12:39:50,606 INFO client.py Function parse_params was called - args: (), kwargs: {}. It was called from function client.main()
+2023-06-23 12:39:52,659 CRITICAL client.py Something went wrong: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение
+2023-06-23 12:40:38,139 INFO client.py IP-address: localhost, TCP-port: 7777
+2023-06-23 12:40:38,140 INFO client.py Function parse_params was called - args: (), kwargs: {}. It was called from function client.main()
+2023-06-23 13:15:27,737 INFO client.py IP-address: localhost, TCP-port: 7777
+2023-06-23 13:15:27,739 INFO client.py Function parse_params was called - args: (), kwargs: {}. It was called from function client.main()
+2023-06-23 13:15:29,768 CRITICAL client.py Something went wrong: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение
+2023-06-23 13:21:19,806 INFO client.py IP-address: localhost, TCP-port: 7777
+2023-06-23 13:21:19,808 INFO client.py Function parse_params was called - args: (), kwargs: {}. It was called from function client.main()
+2023-06-23 13:21:19,816 INFO client.py Connected to server: 7777:localhost
+2023-06-23 13:21:19,817 INFO client.py Function connect_to_socket was called - args: (<__main__.Client object at 0x000001A042B43910>, 'localhost', 7777), kwargs: {}. It was called from function client.main()
+2023-06-23 13:21:35,803 INFO client.py Creating message from user: M
+2023-06-23 13:21:35,803 INFO client.py Function create_message was called - args: (<__main__.Client object at 0x000001A042B43910>,), kwargs: {'action': 'presence', 'type': 'status'}. It was called from function client.main()
+2023-06-23 13:21:35,805 INFO client.py Function send_message was called - args: (<socket.socket fd=372, family=2, type=1, proto=0, laddr=('127.0.0.1', 52290), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1687515695.8039837, 'user': {'username': 'M', 'status': 'online'}, 'type': 'status'}), kwargs: {}. It was called from function client.main()
+2023-06-23 13:21:35,908 INFO client.py Function get_message was called - args: (<socket.socket fd=372, family=2, type=1, proto=0, laddr=('127.0.0.1', 52290), raddr=('127.0.0.1', 7777)>,), kwargs: {}. It was called from function client.main()
+2023-06-23 13:21:35,909 INFO client.py The response from the server was received: {'action': 'login', 'time': 1687515695.9079332, 'alert': 'ok'}
+2023-06-23 13:21:35,909 INFO client.py Parsing message from the server: {'action': 'login', 'time': 1687515695.9079332, 'alert': 'ok'}
+2023-06-23 13:21:35,910 INFO client.py Function parse_message was called - args: (<__main__.Client object at 0x000001A042B43910>, {'action': 'login', 'time': 1687515695.9079332, 'alert': 'ok'}), kwargs: {}. It was called from function client.main()
+2023-06-23 13:21:35,910 INFO client.py Function set_username was called - args: (<__main__.Client object at 0x000001A042B43910>,), kwargs: {}. It was called from function client.main()
+2023-06-23 13:21:35,912 INFO client.py Function main was called - args: (<__main__.Client object at 0x000001A042B43910>,), kwargs: {}. It was called from function client.main()
+2023-06-23 13:21:35,913 INFO client.py Function set_username was called - args: (<__main__.Client object at 0x000001A042B43910>,), kwargs: {}. It was called from function client.set_username()
+2023-06-23 13:21:49,138 INFO client.py Creating message from user: M
+2023-06-23 13:21:49,141 INFO client.py Function create_message was called - args: (<__main__.Client object at 0x000001A042B43910>,), kwargs: {'action': 'msg', 'body': 'M', 'to_user': 'M'}. It was called from function self._bootstrap_inner()
+2023-06-23 13:21:49,142 INFO client.py Function send_message was called - args: (<socket.socket fd=372, family=2, type=1, proto=0, laddr=('127.0.0.1', 52290), raddr=('127.0.0.1', 7777)>, {'action': 'msg', 'time': 1687515709.1389675, 'user': {'username': 'M', 'status': 'online'}, 'body': 'M', 'to_user': 'M'}), kwargs: {}. It was called from function self._bootstrap_inner()
+2023-06-23 13:21:50,034 INFO client.py Function get_message was called - args: (<socket.socket fd=372, family=2, type=1, proto=0, laddr=('127.0.0.1', 52290), raddr=('127.0.0.1', 7777)>,), kwargs: {}. It was called from function self._bootstrap_inner()
+2023-06-23 13:21:50,034 INFO client.py The message was received: {'action': 'msg', 'time': 1687515709.1389675, 'user': {'username': 'M', 'status': 'online'}, 'body': 'M', 'to_user': 'M'}
+2023-06-23 13:21:50,034 INFO client.py Parsing message from the server: {'action': 'msg', 'time': 1687515709.1389675, 'user': {'username': 'M', 'status': 'online'}, 'body': 'M', 'to_user': 'M'}
+2023-06-23 13:21:50,035 INFO client.py Function parse_message was called - args: (<__main__.Client object at 0x000001A042B43910>, {'action': 'msg', 'time': 1687515709.1389675, 'user': {'username': 'M', 'status': 'online'}, 'body': 'M', 'to_user': 'M'}), kwargs: {}. It was called from function self._bootstrap_inner()
+2023-06-23 13:21:50,035 INFO client.py Function get_and_parse_message was called - args: (<__main__.Client object at 0x000001A042B43910>,), kwargs: {}. It was called from function self._bootstrap_inner()
+2023-06-23 13:44:14,137 INFO client.py IP-address: localhost, TCP-port: 7777
+2023-06-23 13:44:14,140 INFO client.py Function parse_params was called - args: (), kwargs: {}. It was called from function client.main()
+2023-06-23 13:44:14,146 INFO client.py Connected to server: 7777:localhost
+2023-06-23 13:44:14,147 INFO client.py Function connect_to_socket was called - args: (<__main__.Client object at 0x000001C60D913910>, 'localhost', 7777), kwargs: {}. It was called from function client.main()
+2023-06-23 15:03:39,951 INFO client.py IP-address: localhost, TCP-port: 7777
+2023-06-23 15:03:39,951 INFO client.py Function parse_params was called - args: (), kwargs: {}. It was called from function main()
+2023-06-23 15:04:06,770 CRITICAL client.py Something went wrong: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение
+2023-06-23 15:04:20,028 INFO client.py IP-address: localhost, TCP-port: 7777
+2023-06-23 15:04:20,028 INFO client.py Function parse_params was called - args: (), kwargs: {}. It was called from function main()
+2023-06-23 15:04:32,107 INFO client.py Connected to server: 7777:localhost
+2023-06-23 15:04:39,554 INFO client.py Function connect_to_socket was called - args: (<__main__.Client object at 0x000001D9EB9756D0>, 'localhost', 7777), kwargs: {}. It was called from function main()
+2023-06-23 15:09:02,494 INFO client.py IP-address: localhost, TCP-port: 7777
+2023-06-23 15:09:02,500 INFO client.py Function parse_params was called - args: (), kwargs: {}. It was called from function main()
+2023-06-23 15:09:28,834 CRITICAL client.py Something went wrong: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение
+2023-06-23 15:10:34,163 INFO client.py IP-address: localhost, TCP-port: 7777
+2023-06-23 15:10:34,164 INFO client.py Function parse_params was called - args: (), kwargs: {}. It was called from function client.main()
+2023-06-23 15:10:34,171 INFO client.py Connected to server: 7777:localhost
+2023-06-23 15:10:34,172 INFO client.py Function connect_to_socket was called - args: (<__main__.Client object at 0x0000021E02EC3910>, 'localhost', 7777), kwargs: {}. It was called from function client.main()
+2023-06-23 15:10:34,635 INFO client.py IP-address: localhost, TCP-port: 7777
+2023-06-23 15:10:34,636 INFO client.py Function parse_params was called - args: (), kwargs: {}. It was called from function client.main()
+2023-06-23 15:10:34,642 INFO client.py Connected to server: 7777:localhost
+2023-06-23 15:10:34,644 INFO client.py Function connect_to_socket was called - args: (<__main__.Client object at 0x000002AD63AE3910>, 'localhost', 7777), kwargs: {}. It was called from function client.main()
+2023-06-23 15:10:36,888 INFO client.py Creating message from user: K
+2023-06-23 15:10:36,889 INFO client.py Function create_message was called - args: (<__main__.Client object at 0x000002AD63AE3910>,), kwargs: {'action': 'presence', 'type': 'status'}. It was called from function client.main()
+2023-06-23 15:10:36,889 INFO client.py Function send_message was called - args: (<socket.socket fd=468, family=2, type=1, proto=0, laddr=('127.0.0.1', 59537), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1687522236.8899546, 'user': {'username': 'K', 'status': 'online'}, 'type': 'status'}), kwargs: {}. It was called from function client.main()
+2023-06-23 15:10:37,666 INFO client.py Function get_message was called - args: (<socket.socket fd=468, family=2, type=1, proto=0, laddr=('127.0.0.1', 59537), raddr=('127.0.0.1', 7777)>,), kwargs: {}. It was called from function client.main()
+2023-06-23 15:10:37,667 INFO client.py The response from the server was received: {'action': 'login', 'time': 1687522237.6667519, 'alert': 'ok'}
+2023-06-23 15:10:37,667 INFO client.py Parsing message from the server: {'action': 'login', 'time': 1687522237.6667519, 'alert': 'ok'}
+2023-06-23 15:10:37,668 INFO client.py Function parse_message was called - args: (<__main__.Client object at 0x000002AD63AE3910>, {'action': 'login', 'time': 1687522237.6667519, 'alert': 'ok'}), kwargs: {}. It was called from function client.main()
+2023-06-23 15:10:37,668 INFO client.py Function set_username was called - args: (<__main__.Client object at 0x000002AD63AE3910>,), kwargs: {}. It was called from function client.main()
+2023-06-23 15:10:37,669 INFO client.py Function main was called - args: (<__main__.Client object at 0x000002AD63AE3910>,), kwargs: {}. It was called from function client.main()
+2023-06-23 15:10:37,669 INFO client.py Function set_username was called - args: (<__main__.Client object at 0x000002AD63AE3910>,), kwargs: {}. It was called from function client.set_username()
+2023-06-23 15:10:40,032 INFO client.py Creating message from user: L
+2023-06-23 15:10:40,033 INFO client.py Function create_message was called - args: (<__main__.Client object at 0x0000021E02EC3910>,), kwargs: {'action': 'presence', 'type': 'status'}. It was called from function client.main()
+2023-06-23 15:10:40,033 INFO client.py Function send_message was called - args: (<socket.socket fd=476, family=2, type=1, proto=0, laddr=('127.0.0.1', 59536), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1687522240.0328054, 'user': {'username': 'L', 'status': 'online'}, 'type': 'status'}), kwargs: {}. It was called from function client.main()
+2023-06-23 15:10:40,690 INFO client.py Function get_message was called - args: (<socket.socket fd=476, family=2, type=1, proto=0, laddr=('127.0.0.1', 59536), raddr=('127.0.0.1', 7777)>,), kwargs: {}. It was called from function client.main()
+2023-06-23 15:10:40,691 INFO client.py The response from the server was received: {'action': 'login', 'time': 1687522240.6900325, 'alert': 'ok'}
+2023-06-23 15:10:40,691 INFO client.py Parsing message from the server: {'action': 'login', 'time': 1687522240.6900325, 'alert': 'ok'}
+2023-06-23 15:10:40,692 INFO client.py Function parse_message was called - args: (<__main__.Client object at 0x0000021E02EC3910>, {'action': 'login', 'time': 1687522240.6900325, 'alert': 'ok'}), kwargs: {}. It was called from function client.main()
+2023-06-23 15:10:40,692 INFO client.py Function set_username was called - args: (<__main__.Client object at 0x0000021E02EC3910>,), kwargs: {}. It was called from function client.main()
+2023-06-23 15:10:40,692 INFO client.py Function main was called - args: (<__main__.Client object at 0x0000021E02EC3910>,), kwargs: {}. It was called from function client.main()
+2023-06-23 15:10:40,693 INFO client.py Function set_username was called - args: (<__main__.Client object at 0x0000021E02EC3910>,), kwargs: {}. It was called from function client.set_username()
+2023-06-23 15:10:49,898 INFO client.py Function send_message was called - args: (<socket.socket fd=476, family=2, type=1, proto=0, laddr=('127.0.0.1', 59536), raddr=('127.0.0.1', 7777)>, {'action': 'quit', 'time': 1687522249.8701618, 'user': {'username': 'L'}}), kwargs: {}. It was called from function self._bootstrap_inner()
+2023-06-23 15:10:49,899 INFO client.py Disconnecting due to client's request
+2023-06-23 15:10:50,901 INFO threading.py Function outgoing_stream was called - args: (<__main__.Client object at 0x0000021E02EC3910>,), kwargs: {}. It was called from function self._bootstrap_inner()
+2023-06-23 15:13:36,008 INFO client.py IP-address: localhost, TCP-port: 7777
+2023-06-23 15:13:36,008 INFO client.py Function parse_params was called - args: (), kwargs: {}. It was called from function main()
+2023-06-23 15:13:40,518 INFO client.py Connected to server: 7777:localhost
+2023-06-23 15:13:47,829 INFO client.py Function connect_to_socket was called - args: (<__main__.Client object at 0x000002489D827DD0>, 'localhost', 7777), kwargs: {}. It was called from function main()
+2023-06-23 15:13:55,581 INFO client.py Function main was called - args: (<__main__.Client object at 0x000002489D827DD0>,), kwargs: {}. It was called from function main()
+2023-06-23 15:14:05,103 INFO client.py Creating message from user: lol
+2023-06-23 15:14:05,118 INFO client.py Function create_message was called - args: (<__main__.Client object at 0x000002489D827DD0>,), kwargs: {'action': 'presence', 'type': 'status'}. It was called from function main()
+2023-06-23 15:14:05,118 INFO client.py Function send_message was called - args: (<socket.socket fd=988, family=2, type=1, proto=0, laddr=('127.0.0.1', 60384), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1687522445.1031926, 'user': {'username': 'lol', 'status': 'online'}, 'type': 'status'}), kwargs: {}. It was called from function main()
+2023-06-23 15:14:05,259 INFO client.py Function get_message was called - args: (<socket.socket fd=988, family=2, type=1, proto=0, laddr=('127.0.0.1', 60384), raddr=('127.0.0.1', 7777)>,), kwargs: {}. It was called from function main()
+2023-06-23 15:14:05,259 INFO client.py The response from the server was received: {'action': 'login', 'time': 1687522445.2594268, 'alert': 'ok'}
+2023-06-23 15:14:05,259 INFO client.py Parsing message from the server: {'action': 'login', 'time': 1687522445.2594268, 'alert': 'ok'}
+2023-06-23 15:14:05,259 INFO client.py Function parse_message was called - args: (<__main__.Client object at 0x000002489D827DD0>, {'action': 'login', 'time': 1687522445.2594268, 'alert': 'ok'}), kwargs: {}. It was called from function main()
+2023-06-23 15:14:05,259 INFO client.py Function set_username was called - args: (<__main__.Client object at 0x000002489D827DD0>,), kwargs: {}. It was called from function main()
+2023-06-23 15:17:46,362 INFO client.py IP-address: localhost, TCP-port: 7777
+2023-06-23 15:17:46,362 INFO client.py Function parse_params was called - args: (), kwargs: {}. It was called from function main()
+2023-06-23 15:17:46,362 INFO client.py Connected to server: 7777:localhost
+2023-06-23 15:17:46,362 INFO client.py Function connect_to_socket was called - args: (<__main__.Client object at 0x000001EB969D41D0>, 'localhost', 7777), kwargs: {}. It was called from function main()
+2023-06-23 15:17:46,375 INFO client.py Function main was called - args: (<__main__.Client object at 0x000001EB969D41D0>,), kwargs: {}. It was called from function main()
+2023-06-23 15:17:57,167 INFO client.py Creating message from user: Helen
+2023-06-23 15:17:57,167 INFO client.py Function create_message was called - args: (<__main__.Client object at 0x000001EB969D41D0>,), kwargs: {'action': 'presence', 'type': 'status'}. It was called from function main()
+2023-06-23 15:17:57,167 INFO client.py Function send_message was called - args: (<socket.socket fd=788, family=2, type=1, proto=0, laddr=('127.0.0.1', 61480), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1687522677.1678572, 'user': {'username': 'Helen', 'status': 'online'}, 'type': 'status'}), kwargs: {}. It was called from function main()
+2023-06-23 15:17:57,402 INFO client.py Function get_message was called - args: (<socket.socket fd=788, family=2, type=1, proto=0, laddr=('127.0.0.1', 61480), raddr=('127.0.0.1', 7777)>,), kwargs: {}. It was called from function main()
+2023-06-23 15:17:57,402 INFO client.py The response from the server was received: {'action': 'login', 'time': 1687522677.402849, 'alert': 'ok'}
+2023-06-23 15:17:57,402 INFO client.py Parsing message from the server: {'action': 'login', 'time': 1687522677.402849, 'alert': 'ok'}
+2023-06-23 15:17:57,402 INFO client.py Function parse_message was called - args: (<__main__.Client object at 0x000001EB969D41D0>, {'action': 'login', 'time': 1687522677.402849, 'alert': 'ok'}), kwargs: {}. It was called from function main()
+2023-06-23 15:17:57,402 INFO client.py Function set_username was called - args: (<__main__.Client object at 0x000001EB969D41D0>,), kwargs: {}. It was called from function main()
+2023-06-23 15:29:20,945 CRITICAL client.py Error while getting message: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2023-06-23 15:34:43,057 INFO client.py IP-address: localhost, TCP-port: 7777
+2023-06-23 15:34:43,057 INFO client.py Function parse_params was called - args: (), kwargs: {}. It was called from function main()
+2023-06-23 15:34:43,073 INFO client.py Connected to server: 7777:localhost
+2023-06-23 15:34:43,073 INFO client.py Function connect_to_socket was called - args: (<__main__.Client object at 0x000001ACC82A4D10>, 'localhost', 7777), kwargs: {}. It was called from function main()
+2023-06-23 15:34:43,073 INFO client.py Function main was called - args: (<__main__.Client object at 0x000001ACC82A4D10>,), kwargs: {}. It was called from function main()

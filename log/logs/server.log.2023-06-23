@@ -1,0 +1,91 @@
+2023-06-23 12:12:48,118 INFO server.py IP-address: localhost, TCP-port: 7777
+2023-06-23 12:12:48,129 INFO server.py Socket was successfully created
+2023-06-23 12:12:48,131 INFO server.py Function init_socket was called - args: (<__main__.Server object at 0x0000027192843150>,), kwargs: {}. It was called from function server.main()
+2023-06-23 12:12:48,675 INFO server.py The connection was set - client: <socket.socket fd=384, family=2, type=1, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 51501)>, address: ('127.0.0.1', 51501)
+2023-06-23 12:12:57,734 INFO server.py Function get_message was called - args: (<socket.socket fd=384, family=2, type=1, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 51501)>,), kwargs: {}. It was called from function server.main()
+2023-06-23 12:12:57,742 INFO server.py Received message from client Clown: {'action': 'presence', 'time': 1687511577.0996547, 'user': {'username': 'Clown', 'status': 'online'}, 'type': 'status'}
+2023-06-23 12:12:57,742 INFO server.py Function send_message was called - args: (<socket.socket fd=384, family=2, type=1, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 51501)>, {'action': 'login', 'time': 1687511577.7428522, 'alert': 'ok'}), kwargs: {}. It was called from function server.main()
+2023-06-23 12:12:57,743 INFO server.py Response message was sent: {'action': 'login', 'time': 1687511577.7428522, 'alert': 'ok'}
+2023-06-23 12:12:57,743 INFO server.py Function check_requests was called - args: (<__main__.Server object at 0x0000027192843150>, [<socket.socket fd=384, family=2, type=1, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 51501)>]), kwargs: {}. It was called from function server.main()
+2023-06-23 12:13:14,883 INFO server.py Function get_message was called - args: (<socket.socket fd=384, family=2, type=1, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 51501)>,), kwargs: {}. It was called from function server.main()
+2023-06-23 12:13:14,884 INFO server.py Received message from client Clown: {'action': 'msg', 'time': 1687511594.3547196, 'user': {'username': 'Clown', 'status': 'online'}, 'body': 'hi', 'to_user': 'Clown'}
+2023-06-23 12:13:14,885 INFO server.py Function check_requests was called - args: (<__main__.Server object at 0x0000027192843150>, [<socket.socket fd=384, family=2, type=1, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 51501)>]), kwargs: {}. It was called from function server.main()
+2023-06-23 12:13:14,886 INFO server.py Function send_message was called - args: (<socket.socket fd=384, family=2, type=1, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 51501)>, {'action': 'msg', 'time': 1687511594.3547196, 'user': {'username': 'Clown', 'status': 'online'}, 'body': 'hi', 'to_user': 'Clown'}), kwargs: {}. It was called from function server.main()
+2023-06-23 12:13:14,887 INFO server.py A message was sent to user Clownfrom user Clown
+2023-06-23 12:13:14,887 INFO server.py Function write_responses was called - args: (<__main__.Server object at 0x0000027192843150>, [<socket.socket fd=384, family=2, type=1, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 51501)>]), kwargs: {}. It was called from function server.main()
+2023-06-23 12:13:22,951 ERROR server.py Client ('127.0.0.1', 51501) disconnected, error [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2023-06-23 12:13:22,960 INFO server.py Function check_requests was called - args: (<__main__.Server object at 0x0000027192843150>, [<socket.socket fd=384, family=2, type=1, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 51501)>]), kwargs: {}. It was called from function server.main()
+2023-06-23 13:19:23,677 INFO server.py IP-address: localhost, TCP-port: 7777
+2023-06-23 13:19:23,688 INFO server.py Socket was successfully created
+2023-06-23 13:19:23,690 INFO server.py Function init_socket was called - args: (<__main__.Server object at 0x000002156BBC9850>,), kwargs: {}. It was called from function server.main()
+2023-06-23 13:21:19,097 INFO server.py IP-address: localhost, TCP-port: 7777
+2023-06-23 13:21:19,106 INFO server.py Socket was successfully created
+2023-06-23 13:21:19,109 INFO server.py Function init_socket was called - args: (<__main__.Server object at 0x000002953407F4D0>,), kwargs: {}. It was called from function server.main()
+2023-06-23 13:21:19,816 INFO server.py The connection was set - client: <socket.socket fd=336, family=2, type=1, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 52290)>, address: ('127.0.0.1', 52290)
+2023-06-23 13:21:35,907 INFO server.py Function get_message was called - args: (<socket.socket fd=336, family=2, type=1, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 52290)>,), kwargs: {}. It was called from function server.main()
+2023-06-23 13:21:35,907 INFO server.py Received message from client M: {'action': 'presence', 'time': 1687515695.8039837, 'user': {'username': 'M', 'status': 'online'}, 'type': 'status'}
+2023-06-23 13:21:35,908 INFO server.py Function send_message was called - args: (<socket.socket fd=336, family=2, type=1, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 52290)>, {'action': 'login', 'time': 1687515695.9079332, 'alert': 'ok'}), kwargs: {}. It was called from function server.main()
+2023-06-23 13:21:35,908 INFO server.py Response message was sent: {'action': 'login', 'time': 1687515695.9079332, 'alert': 'ok'}
+2023-06-23 13:21:35,909 INFO server.py Function check_requests was called - args: (<__main__.Server object at 0x000002953407F4D0>, [<socket.socket fd=336, family=2, type=1, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 52290)>]), kwargs: {}. It was called from function server.main()
+2023-06-23 13:21:50,018 INFO server.py Function get_message was called - args: (<socket.socket fd=336, family=2, type=1, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 52290)>,), kwargs: {}. It was called from function server.main()
+2023-06-23 13:21:50,022 INFO server.py Received message from client M: {'action': 'msg', 'time': 1687515709.1389675, 'user': {'username': 'M', 'status': 'online'}, 'body': 'M', 'to_user': 'M'}
+2023-06-23 13:21:50,023 INFO server.py Function check_requests was called - args: (<__main__.Server object at 0x000002953407F4D0>, [<socket.socket fd=336, family=2, type=1, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 52290)>]), kwargs: {}. It was called from function server.main()
+2023-06-23 13:21:50,033 INFO server.py Function send_message was called - args: (<socket.socket fd=336, family=2, type=1, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 52290)>, {'action': 'msg', 'time': 1687515709.1389675, 'user': {'username': 'M', 'status': 'online'}, 'body': 'M', 'to_user': 'M'}), kwargs: {}. It was called from function server.main()
+2023-06-23 13:21:50,034 INFO server.py A message was sent to user Mfrom user M
+2023-06-23 13:21:50,034 INFO server.py Function write_responses was called - args: (<__main__.Server object at 0x000002953407F4D0>, [<socket.socket fd=336, family=2, type=1, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 52290)>]), kwargs: {}. It was called from function server.main()
+2023-06-23 13:21:58,080 ERROR server.py Client ('127.0.0.1', 52290) disconnected, error [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2023-06-23 13:21:58,081 INFO server.py Function check_requests was called - args: (<__main__.Server object at 0x000002953407F4D0>, [<socket.socket fd=336, family=2, type=1, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 52290)>]), kwargs: {}. It was called from function server.main()
+2023-06-23 13:40:37,062 INFO server.py IP-address: localhost, TCP-port: 7777
+2023-06-23 13:40:37,062 INFO server.py Socket was successfully created
+2023-06-23 13:40:37,077 INFO server.py Function init_socket was called - args: (<__main__.Server object at 0x0000026126027250>,), kwargs: {}. It was called from function main()
+2023-06-23 13:44:13,607 INFO server.py IP-address: localhost, TCP-port: 7777
+2023-06-23 13:44:13,614 ERROR server.py Something went wrong: [WinError 10048] Обычно разрешается только одно использование адреса сокета (протокол/сетевой адрес/порт)
+2023-06-23 13:44:14,147 INFO server.py The connection was set - client: <socket.socket fd=852, family=2, type=1, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 57785)>, address: ('127.0.0.1', 57785)
+2023-06-23 15:04:06,770 INFO server.py IP-address: localhost, TCP-port: 7777
+2023-06-23 15:04:06,776 INFO server.py Socket was successfully created
+2023-06-23 15:04:06,776 INFO server.py Function init_socket was called - args: (<__main__.Server object at 0x00000256FE9FD650>,), kwargs: {}. It was called from function main()
+2023-06-23 15:04:28,900 INFO server.py The connection was set - client: <socket.socket fd=832, family=2, type=1, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 58067)>, address: ('127.0.0.1', 58067)
+2023-06-23 15:09:40,898 INFO server.py IP-address: localhost, TCP-port: 7777
+2023-06-23 15:09:40,898 INFO server.py Socket was successfully created
+2023-06-23 15:09:40,898 INFO server.py Function init_socket was called - args: (<__main__.Server object at 0x0000013529D0CCD0>,), kwargs: {}. It was called from function main()
+2023-06-23 15:10:33,524 INFO server.py IP-address: localhost, TCP-port: 7777
+2023-06-23 15:10:33,533 INFO server.py Socket was successfully created
+2023-06-23 15:10:33,534 INFO server.py Function init_socket was called - args: (<__main__.Server object at 0x000002194E4DF4D0>,), kwargs: {}. It was called from function server.main()
+2023-06-23 15:10:34,171 INFO server.py The connection was set - client: <socket.socket fd=456, family=2, type=1, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 59536)>, address: ('127.0.0.1', 59536)
+2023-06-23 15:10:34,643 INFO server.py The connection was set - client: <socket.socket fd=408, family=2, type=1, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 59537)>, address: ('127.0.0.1', 59537)
+2023-06-23 15:10:37,665 INFO server.py Function get_message was called - args: (<socket.socket fd=408, family=2, type=1, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 59537)>,), kwargs: {}. It was called from function server.main()
+2023-06-23 15:10:37,666 INFO server.py Received message from client K: {'action': 'presence', 'time': 1687522236.8899546, 'user': {'username': 'K', 'status': 'online'}, 'type': 'status'}
+2023-06-23 15:10:37,666 INFO server.py Function send_message was called - args: (<socket.socket fd=408, family=2, type=1, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 59537)>, {'action': 'login', 'time': 1687522237.6667519, 'alert': 'ok'}), kwargs: {}. It was called from function server.main()
+2023-06-23 15:10:37,666 INFO server.py Response message was sent: {'action': 'login', 'time': 1687522237.6667519, 'alert': 'ok'}
+2023-06-23 15:10:37,667 INFO server.py Function check_requests was called - args: (<__main__.Server object at 0x000002194E4DF4D0>, [<socket.socket fd=408, family=2, type=1, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 59537)>]), kwargs: {}. It was called from function server.main()
+2023-06-23 15:10:40,689 INFO server.py Function get_message was called - args: (<socket.socket fd=456, family=2, type=1, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 59536)>,), kwargs: {}. It was called from function server.main()
+2023-06-23 15:10:40,690 INFO server.py Received message from client L: {'action': 'presence', 'time': 1687522240.0328054, 'user': {'username': 'L', 'status': 'online'}, 'type': 'status'}
+2023-06-23 15:10:40,690 INFO server.py Function send_message was called - args: (<socket.socket fd=456, family=2, type=1, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 59536)>, {'action': 'login', 'time': 1687522240.6900325, 'alert': 'ok'}), kwargs: {}. It was called from function server.main()
+2023-06-23 15:10:40,691 INFO server.py Response message was sent: {'action': 'login', 'time': 1687522240.6900325, 'alert': 'ok'}
+2023-06-23 15:10:40,691 INFO server.py Function check_requests was called - args: (<__main__.Server object at 0x000002194E4DF4D0>, [<socket.socket fd=456, family=2, type=1, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 59536)>]), kwargs: {}. It was called from function server.main()
+2023-06-23 15:10:50,762 INFO server.py Function get_message was called - args: (<socket.socket fd=456, family=2, type=1, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 59536)>,), kwargs: {}. It was called from function server.main()
+2023-06-23 15:10:50,778 INFO server.py Received message from client L: {'action': 'quit', 'time': 1687522249.8701618, 'user': {'username': 'L'}}
+2023-06-23 15:10:50,793 ERROR server.py Client ('127.0.0.1', 59536) disconnected, error not enough values to unpack (expected 2, got 1)
+2023-06-23 15:10:50,794 INFO server.py Function check_requests was called - args: (<__main__.Server object at 0x000002194E4DF4D0>, [<socket.socket fd=456, family=2, type=1, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 59536)>]), kwargs: {}. It was called from function server.main()
+2023-06-23 15:13:04,615 INFO server.py IP-address: localhost, TCP-port: 7777
+2023-06-23 15:13:04,629 INFO server.py Socket was successfully created
+2023-06-23 15:13:04,631 INFO server.py Function init_socket was called - args: (<__main__.Server object at 0x000002530E4F5C90>,), kwargs: {}. It was called from function main()
+2023-06-23 15:13:39,039 INFO server.py The connection was set - client: <socket.socket fd=860, family=2, type=1, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 60384)>, address: ('127.0.0.1', 60384)
+2023-06-23 15:14:05,243 INFO server.py Function get_message was called - args: (<socket.socket fd=860, family=2, type=1, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 60384)>,), kwargs: {}. It was called from function main()
+2023-06-23 15:14:05,259 INFO server.py Received message from client lol: {'action': 'presence', 'time': 1687522445.1031926, 'user': {'username': 'lol', 'status': 'online'}, 'type': 'status'}
+2023-06-23 15:14:05,259 INFO server.py Function send_message was called - args: (<socket.socket fd=860, family=2, type=1, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 60384)>, {'action': 'login', 'time': 1687522445.2594268, 'alert': 'ok'}), kwargs: {}. It was called from function main()
+2023-06-23 15:14:05,259 INFO server.py Response message was sent: {'action': 'login', 'time': 1687522445.2594268, 'alert': 'ok'}
+2023-06-23 15:14:05,259 INFO server.py Function check_requests was called - args: (<__main__.Server object at 0x000002530E4F5C90>, [<socket.socket fd=860, family=2, type=1, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 60384)>]), kwargs: {}. It was called from function main()
+2023-06-23 15:17:46,035 INFO server.py IP-address: localhost, TCP-port: 7777
+2023-06-23 15:17:46,051 INFO server.py Socket was successfully created
+2023-06-23 15:17:46,051 INFO server.py Function init_socket was called - args: (<__main__.Server object at 0x000002459566D5D0>,), kwargs: {}. It was called from function main()
+2023-06-23 15:17:46,362 INFO server.py The connection was set - client: <socket.socket fd=880, family=2, type=1, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 61480)>, address: ('127.0.0.1', 61480)
+2023-06-23 15:17:57,402 INFO server.py Function get_message was called - args: (<socket.socket fd=880, family=2, type=1, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 61480)>,), kwargs: {}. It was called from function main()
+2023-06-23 15:17:57,402 INFO server.py Received message from client Helen: {'action': 'presence', 'time': 1687522677.1678572, 'user': {'username': 'Helen', 'status': 'online'}, 'type': 'status'}
+2023-06-23 15:17:57,402 INFO server.py Function send_message was called - args: (<socket.socket fd=880, family=2, type=1, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 61480)>, {'action': 'login', 'time': 1687522677.402849, 'alert': 'ok'}), kwargs: {}. It was called from function main()
+2023-06-23 15:17:57,402 INFO server.py Response message was sent: {'action': 'login', 'time': 1687522677.402849, 'alert': 'ok'}
+2023-06-23 15:17:57,402 INFO server.py Function check_requests was called - args: (<__main__.Server object at 0x000002459566D5D0>, [<socket.socket fd=880, family=2, type=1, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 61480)>]), kwargs: {}. It was called from function main()
+2023-06-23 15:34:42,555 INFO server.py IP-address: localhost, TCP-port: 7777
+2023-06-23 15:34:42,564 INFO server.py Socket was successfully created
+2023-06-23 15:34:42,570 INFO server.py Function init_socket was called - args: (<__main__.Server object at 0x000001ADA9A3E290>,), kwargs: {}. It was called from function main()
+2023-06-23 15:34:43,073 INFO server.py The connection was set - client: <socket.socket fd=440, family=2, type=1, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 49708)>, address: ('127.0.0.1', 49708)
