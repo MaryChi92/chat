@@ -10,6 +10,7 @@ from log.server_log_config import logger
 from log.deco_log_config import Log
 from descriptor import Port
 from metaclasses import BaseVerifier
+from app.models import Storage
 
 
 class ServerVerifier(BaseVerifier):
@@ -43,6 +44,8 @@ class Server(Utils, ProcessClientMessageMixin, metaclass=ServerVerifier):
         self.users = Users()
         self.messages = deque()
 
+        self.db = db
+
     # @staticmethod
     # @Log()
     # def parse_params():
@@ -75,6 +78,8 @@ class Server(Utils, ProcessClientMessageMixin, metaclass=ServerVerifier):
                 if message["action"] == "presence":
                     if current_client_name not in self.users.usernames_sockets.keys():
                         self.users.usernames_sockets[current_client_name] = sock
+                        client_ip, client_port = sock.getpeername()
+                        self.db.client_login(current_client_name, client_ip, client_port)
                         # status_code_message = self.get_status_code_message(message)
                         response_message = self.make_message_template("login", alert="ok")
                         self.send_message(sock, response_message)
@@ -93,6 +98,7 @@ class Server(Utils, ProcessClientMessageMixin, metaclass=ServerVerifier):
                     return
                 elif message["action"] == "quit":
                     self.users.delete_user(sock, disconnect=True)
+                    self.db.client_logout(current_client_name)
                     return
                 else:
                     response_message = self.get_status_code_message('error', error='Incorrect request')
@@ -119,7 +125,7 @@ class Server(Utils, ProcessClientMessageMixin, metaclass=ServerVerifier):
                 logger.error(f'User {destination_username} is not registered, message can not be sent')
 
     @Log()
-    def main(self):
+    def run(self):
         try:
             self.sock = self.init_socket()
         except Exception as e:
@@ -153,6 +159,8 @@ class Server(Utils, ProcessClientMessageMixin, metaclass=ServerVerifier):
 
 
 if __name__ == '__main__':
+    db = Storage()
+
     c_host, c_port = parse_params()
     server = Server(c_host, c_port)
-    server.main()
+    server.run()

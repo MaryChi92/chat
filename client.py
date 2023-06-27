@@ -38,8 +38,8 @@ class Client(Utils, metaclass=ClientVerifier):
     @Log()
     def parse_params():
         parser = ArgumentParser()
-        parser.add_argument('a', type=str, default=DEFAULT_HOST, help='IP-address')
-        parser.add_argument('p', type=int, default=DEFAULT_PORT, help='TCP-port')
+        parser.add_argument('-a', type=str, default=DEFAULT_HOST, help='IP-address')
+        parser.add_argument('-p', type=int, default=DEFAULT_PORT, help='TCP-port')
         args = parser.parse_args()
         logger.info(
             f"IP-address: {args.a if args.a else DEFAULT_PORT}, TCP-port: {args.p if args.p else DEFAULT_HOST}"
