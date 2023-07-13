@@ -1,0 +1,213 @@
+2023-06-27 11:08:53,974 INFO server.py IP-address: localhost, TCP-port: 7777
+2023-06-27 11:08:53,984 INFO server.py Socket was successfully created
+2023-06-27 11:10:23,503 INFO server.py IP-address: localhost, TCP-port: 7777
+2023-06-27 11:10:23,519 INFO server.py Socket was successfully created
+2023-06-27 11:10:23,519 INFO server.py Function init_socket was called - args: (<__main__.Server object at 0x0000020A4C9DD5B0>,), kwargs: {}. It was called from function server.run()
+2023-06-27 11:10:50,117 INFO server.py The connection was set - client: <socket.socket fd=684, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 55479)>, address: ('127.0.0.1', 55479)
+2023-06-27 11:11:08,288 INFO server.py Function get_message was called - args: (<socket.socket fd=684, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 55479)>,), kwargs: {}. It was called from function server.run()
+2023-06-27 11:11:08,288 INFO server.py Received message from client Kylie: {'action': 'presence', 'time': 1687853467.3323905, 'user': {'username': 'Kylie', 'status': 'online'}, 'type': 'status'}
+2023-06-27 11:11:08,304 INFO server.py Function send_message was called - args: (<socket.socket fd=684, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 55479)>, {'action': 'login', 'time': 1687853468.3045957, 'alert': 'ok'}), kwargs: {}. It was called from function server.run()
+2023-06-27 11:11:08,305 INFO server.py Response message was sent: {'action': 'login', 'time': 1687853468.3045957, 'alert': 'ok'}
+2023-06-27 11:11:08,315 INFO server.py Function check_requests was called - args: (<__main__.Server object at 0x0000020A4C9DD5B0>, [<socket.socket fd=684, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 55479)>]), kwargs: {}. It was called from function server.run()
+2023-06-27 11:11:23,442 INFO server.py Function get_message was called - args: (<socket.socket fd=684, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 55479)>,), kwargs: {}. It was called from function server.run()
+2023-06-27 11:11:23,443 INFO server.py Received message from client Kylie: {'action': 'msg', 'time': 1687853483.370748, 'user': {'username': 'Kylie', 'status': 'online'}, 'body': 'hi', 'to_user': 'Kylie'}
+2023-06-27 11:11:23,443 INFO server.py Function check_requests was called - args: (<__main__.Server object at 0x0000020A4C9DD5B0>, [<socket.socket fd=684, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 55479)>]), kwargs: {}. It was called from function server.run()
+2023-06-27 11:11:23,443 INFO server.py Function send_message was called - args: (<socket.socket fd=684, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 55479)>, {'action': 'msg', 'time': 1687853483.370748, 'user': {'username': 'Kylie', 'status': 'online'}, 'body': 'hi', 'to_user': 'Kylie'}), kwargs: {}. It was called from function server.run()
+2023-06-27 11:11:23,443 INFO server.py A message was sent to user Kyliefrom user Kylie
+2023-06-27 11:11:23,443 INFO server.py Function write_responses was called - args: (<__main__.Server object at 0x0000020A4C9DD5B0>, [<socket.socket fd=684, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 55479)>]), kwargs: {}. It was called from function server.run()
+2023-06-27 11:11:29,497 INFO server.py Function get_message was called - args: (<socket.socket fd=684, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 55479)>,), kwargs: {}. It was called from function server.run()
+2023-06-27 11:11:29,497 INFO server.py Received message from client Kylie: {'action': 'quit', 'time': 1687853489.0118618, 'user': {'username': 'Kylie'}}
+2023-06-27 11:11:29,499 ERROR server.py Client ('127.0.0.1', 55479) disconnected, error too many values to unpack (expected 2)
+2023-06-27 11:11:29,500 INFO server.py Function check_requests was called - args: (<__main__.Server object at 0x0000020A4C9DD5B0>, [<socket.socket fd=684, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 55479)>]), kwargs: {}. It was called from function server.run()
+2023-06-27 13:45:28,282 INFO server.py The connection was set - client: <socket.socket fd=732, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 57563)>, address: ('127.0.0.1', 57563)
+2023-06-27 13:45:43,432 INFO server.py Function get_message was called - args: (<socket.socket fd=732, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 57563)>,), kwargs: {}. It was called from function server.run()
+2023-06-27 13:45:43,433 INFO server.py Received message from client Ррррррррр: {'action': 'presence', 'time': 1687862742.8624659, 'user': {'username': 'Ррррррррр', 'status': 'online'}, 'type': 'status'}
+2023-06-27 13:45:43,483 INFO server.py Function send_message was called - args: (<socket.socket fd=732, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 57563)>, {'action': 'login', 'time': 1687862743.4836361, 'alert': 'ok'}), kwargs: {}. It was called from function server.run()
+2023-06-27 13:45:43,485 INFO server.py Response message was sent: {'action': 'login', 'time': 1687862743.4836361, 'alert': 'ok'}
+2023-06-27 13:45:43,486 INFO server.py Function check_requests was called - args: (<__main__.Server object at 0x0000020A4C9DD5B0>, [<socket.socket fd=732, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 57563)>]), kwargs: {}. It was called from function server.run()
+2023-06-27 13:45:52,568 INFO server.py Function get_message was called - args: (<socket.socket fd=732, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 57563)>,), kwargs: {}. It was called from function server.run()
+2023-06-27 13:45:52,569 INFO server.py Received message from client Ррррррррр: {'action': 'quit', 'time': 1687862751.7921536, 'user': {'username': 'Ррррррррр'}}
+2023-06-27 13:45:52,569 ERROR server.py Client ('127.0.0.1', 57563) disconnected, error too many values to unpack (expected 2)
+2023-06-27 13:45:52,570 INFO server.py Function check_requests was called - args: (<__main__.Server object at 0x0000020A4C9DD5B0>, [<socket.socket fd=732, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 57563)>]), kwargs: {}. It was called from function server.run()
+2023-06-27 13:56:23,096 INFO server.py The connection was set - client: <socket.socket fd=776, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 60211)>, address: ('127.0.0.1', 60211)
+2023-06-27 13:59:23,834 INFO server.py Function get_message was called - args: (<socket.socket fd=776, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 60211)>,), kwargs: {}. It was called from function server.run()
+2023-06-27 13:59:23,835 INFO server.py Received message from client Lol: {'action': 'presence', 'time': 1687863563.3850484, 'user': {'username': 'Lol', 'status': 'online'}, 'type': 'status'}
+2023-06-27 13:59:23,854 INFO server.py Function send_message was called - args: (<socket.socket fd=776, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 60211)>, {'action': 'login', 'time': 1687863563.8536432, 'alert': 'ok'}), kwargs: {}. It was called from function server.run()
+2023-06-27 13:59:23,856 INFO server.py Response message was sent: {'action': 'login', 'time': 1687863563.8536432, 'alert': 'ok'}
+2023-06-27 13:59:23,856 INFO server.py Function check_requests was called - args: (<__main__.Server object at 0x0000020A4C9DD5B0>, [<socket.socket fd=776, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 60211)>]), kwargs: {}. It was called from function server.run()
+2023-06-27 13:59:48,110 INFO server.py Function get_message was called - args: (<socket.socket fd=776, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 60211)>,), kwargs: {}. It was called from function server.run()
+2023-06-27 13:59:48,111 INFO server.py Received message from client Lol: {'action': 'quit', 'time': 1687863588.0516193, 'user': {'username': 'Lol'}}
+2023-06-27 13:59:48,112 ERROR server.py Client ('127.0.0.1', 60211) disconnected, error too many values to unpack (expected 2)
+2023-06-27 13:59:48,112 INFO server.py Function check_requests was called - args: (<__main__.Server object at 0x0000020A4C9DD5B0>, [<socket.socket fd=776, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 60211)>]), kwargs: {}. It was called from function server.run()
+2023-06-27 14:00:23,109 INFO server.py IP-address: localhost, TCP-port: 7777
+2023-06-27 14:00:23,114 INFO server.py Socket was successfully created
+2023-06-27 14:00:38,422 INFO server.py The connection was set - client: <socket.socket fd=844, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 61250)>, address: ('127.0.0.1', 61250)
+2023-06-27 14:00:48,515 INFO server.py Received message from client Cat: {'action': 'presence', 'time': 1687863648.02169, 'user': {'username': 'Cat', 'status': 'online'}, 'type': 'status'}
+2023-06-27 14:02:04,099 INFO server.py Response message was sent: {'action': 'login', 'time': 1687863720.6877587, 'alert': 'ok'}
+2023-06-27 14:04:17,234 INFO server.py The connection was set - client: <socket.socket fd=1016, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 62038)>, address: ('127.0.0.1', 62038)
+2023-06-27 14:04:38,035 ERROR server.py Client ('127.0.0.1', 61250) disconnected, error [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2023-06-27 14:04:38,037 INFO server.py Received message from client Kiki: {'action': 'presence', 'time': 1687863842.381623, 'user': {'username': 'Kiki', 'status': 'online'}, 'type': 'status'}
+2023-06-27 14:07:59,552 INFO server.py Response message was sent: {'action': 'login', 'time': 1687864075.9842386, 'alert': 'ok'}
+2023-06-27 14:08:25,562 ERROR server.py Client ('127.0.0.1', 62038) disconnected, error [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2023-06-27 15:27:23,522 INFO server.py IP-address: localhost, TCP-port: 7777
+2023-06-27 15:27:23,522 INFO server.py Socket was successfully created
+2023-06-27 15:27:30,494 INFO server.py IP-address: localhost, TCP-port: 7777
+2023-06-27 15:27:30,498 INFO server.py Socket was successfully created
+2023-06-27 15:27:36,222 INFO server.py The connection was set - client: <socket.socket fd=752, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 53833)>, address: ('127.0.0.1', 53833)
+2023-06-27 15:27:46,303 INFO server.py Received message from client Cat: {'action': 'presence', 'time': 1687868866.2452297, 'user': {'username': 'Cat', 'status': 'online'}, 'type': 'status'}
+2023-06-27 15:27:46,318 INFO server.py Response message was sent: {'action': 'login', 'time': 1687868866.3171718, 'alert': 'ok'}
+2023-06-27 15:27:50,339 INFO server.py Received message from client Cat: {'action': 'quit', 'time': 1687868870.073791, 'user': {'username': 'Cat'}}
+2023-06-27 15:27:50,339 ERROR server.py Client ('127.0.0.1', 53833) disconnected, error too many values to unpack (expected 2)
+2023-06-27 16:12:59,198 INFO server.py IP-address: localhost, TCP-port: 7777
+2023-06-27 16:12:59,202 INFO server.py Socket was successfully created
+2023-06-27 16:13:05,114 INFO server.py The connection was set - client: <socket.socket fd=704, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 65013)>, address: ('127.0.0.1', 65013)
+2023-06-27 16:13:12,194 INFO server.py Received message from client Cat: {'action': 'presence', 'time': 1687871591.2656755, 'user': {'username': 'Cat', 'status': 'online'}, 'type': 'status'}
+2023-06-27 16:13:12,209 INFO server.py Response message was sent: {'action': 'login', 'time': 1687871592.2098007, 'alert': 'ok'}
+2023-06-27 16:14:09,753 INFO server.py Received message from client Cat: {'action': 'msg', 'time': 1687871649.171081, 'user': {'username': 'Cat', 'status': 'online'}, 'body': 'hi', 'to_user': 'Cat'}
+2023-06-27 16:14:09,754 INFO server.py A message was sent to user Catfrom user Cat
+2023-06-27 16:14:15,810 INFO server.py Received message from client Cat: {'action': 'quit', 'time': 1687871655.689068, 'user': {'username': 'Cat'}}
+2023-06-27 16:14:15,811 ERROR server.py Client ('127.0.0.1', 65013) disconnected, error too many values to unpack (expected 2)
+2023-06-27 16:15:55,621 INFO server.py IP-address: localhost, TCP-port: 7777
+2023-06-27 16:15:55,625 INFO server.py Socket was successfully created
+2023-06-27 16:16:01,527 INFO server.py The connection was set - client: <socket.socket fd=808, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 49351)>, address: ('127.0.0.1', 49351)
+2023-06-27 16:16:05,546 INFO server.py Received message from client Cat: {'action': 'presence', 'time': 1687871765.1290572, 'user': {'username': 'Cat', 'status': 'online'}, 'type': 'status'}
+2023-06-27 16:16:05,563 INFO server.py Response message was sent: {'action': 'login', 'time': 1687871765.5626383, 'alert': 'ok'}
+2023-06-27 16:16:09,598 INFO server.py Received message from client Cat: {'action': 'quit', 'time': 1687871768.669784, 'user': {'username': 'Cat'}}
+2023-06-27 16:16:09,599 ERROR server.py Client ('127.0.0.1', 49351) disconnected, error too many values to unpack (expected 2)
+2023-06-27 16:20:09,036 INFO server.py IP-address: localhost, TCP-port: 7777
+2023-06-27 16:20:09,041 INFO server.py Socket was successfully created
+2023-06-27 16:20:13,288 INFO server.py The connection was set - client: <socket.socket fd=756, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 50911)>, address: ('127.0.0.1', 50911)
+2023-06-27 16:20:17,317 INFO server.py Received message from client Cat: {'action': 'presence', 'time': 1687872016.3988163, 'user': {'username': 'Cat', 'status': 'online'}, 'type': 'status'}
+2023-06-27 16:20:17,330 INFO server.py Response message was sent: {'action': 'login', 'time': 1687872017.3292007, 'alert': 'ok'}
+2023-06-27 16:20:39,542 INFO server.py Received message from client Cat: {'action': 'quit', 'time': 1687872038.6394944, 'user': {'username': 'Cat'}}
+2023-06-27 16:20:39,543 ERROR server.py Client ('127.0.0.1', 50911) disconnected, error too many values to unpack (expected 2)
+2023-06-27 16:42:49,637 INFO server.py IP-address: localhost, TCP-port: 7777
+2023-06-27 16:42:49,641 INFO server.py Socket was successfully created
+2023-06-27 16:42:54,554 INFO server.py The connection was set - client: <socket.socket fd=404, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56530)>, address: ('127.0.0.1', 56530)
+2023-06-27 16:43:01,631 INFO server.py Received message from client Dog: {'action': 'presence', 'time': 1687873381.163679, 'user': {'username': 'Dog', 'status': 'online'}, 'type': 'status'}
+2023-06-27 16:43:01,644 INFO server.py Response message was sent: {'action': 'login', 'time': 1687873381.644682, 'alert': 'ok'}
+2023-06-27 16:43:04,655 INFO server.py Received message from client Dog: {'action': 'quit', 'time': 1687873384.3805685, 'user': {'username': 'Dog'}}
+2023-06-27 16:43:04,655 ERROR server.py Client ('127.0.0.1', 56530) disconnected, error too many values to unpack (expected 2)
+2023-06-27 17:03:03,731 INFO server.py IP-address: localhost, TCP-port: 7777
+2023-06-27 17:03:03,736 INFO server.py Socket was successfully created
+2023-06-27 17:03:06,968 INFO server.py The connection was set - client: <socket.socket fd=544, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 61479)>, address: ('127.0.0.1', 61479)
+2023-06-27 17:03:12,006 INFO server.py Received message from client Mouse: {'action': 'presence', 'time': 1687874591.5483088, 'user': {'username': 'Mouse', 'status': 'online'}, 'type': 'status'}
+2023-06-27 17:03:12,021 INFO server.py Response message was sent: {'action': 'login', 'time': 1687874592.020401, 'alert': 'ok'}
+2023-06-27 17:03:15,046 INFO server.py Received message from client Mouse: {'action': 'quit', 'time': 1687874594.8389957, 'user': {'username': 'Mouse'}}
+2023-06-27 17:03:15,046 ERROR server.py Client ('127.0.0.1', 61479) disconnected, error too many values to unpack (expected 2)
+2023-06-27 17:26:30,583 INFO server.py IP-address: localhost, TCP-port: 7777
+2023-06-27 17:26:30,587 INFO server.py Socket was successfully created
+2023-06-27 17:26:34,884 INFO server.py The connection was set - client: <socket.socket fd=384, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 51735)>, address: ('127.0.0.1', 51735)
+2023-06-27 17:26:38,905 INFO server.py Received message from client Cat: {'action': 'presence', 'time': 1687875998.3715637, 'user': {'username': 'Cat', 'status': 'online'}, 'type': 'status'}
+2023-06-27 17:26:38,918 INFO server.py Response message was sent: {'action': 'login', 'time': 1687875998.917593, 'alert': 'ok'}
+2023-06-27 17:27:31,484 INFO server.py Received message from client Cat: {'action': 'msg', 'time': 1687876050.9079728, 'user': {'username': 'Cat', 'status': 'online'}, 'body': 'meow', 'to_user': 'Cat'}
+2023-06-27 17:27:31,488 INFO server.py A message was sent to user Catfrom user Cat
+2023-06-27 17:27:46,630 INFO server.py Received message from client Cat: {'action': 'quit', 'time': 1687876066.295134, 'user': {'username': 'Cat'}}
+2023-06-27 17:27:46,631 ERROR server.py Client ('127.0.0.1', 51735) disconnected, error too many values to unpack (expected 2)
+2023-06-27 17:33:13,895 INFO server.py IP-address: localhost, TCP-port: 7777
+2023-06-27 17:33:13,899 INFO server.py Socket was successfully created
+2023-06-27 17:33:16,447 INFO server.py The connection was set - client: <socket.socket fd=952, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 53356)>, address: ('127.0.0.1', 53356)
+2023-06-27 17:33:24,536 INFO server.py Received message from client Dog: {'action': 'presence', 'time': 1687876403.6536682, 'user': {'username': 'Dog', 'status': 'online'}, 'type': 'status'}
+2023-06-27 17:33:24,555 INFO server.py Response message was sent: {'action': 'login', 'time': 1687876404.5541348, 'alert': 'ok'}
+2023-06-27 17:33:31,635 INFO server.py Received message from client Dog: {'action': 'quit', 'time': 1687876410.7747145, 'user': {'username': 'Dog'}}
+2023-06-27 17:33:31,635 ERROR server.py Client ('127.0.0.1', 53356) disconnected, error too many values to unpack (expected 2)
+2023-06-27 17:33:43,566 INFO server.py The connection was set - client: <socket.socket fd=988, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 53466)>, address: ('127.0.0.1', 53466)
+2023-06-27 17:33:48,617 INFO server.py Received message from client Mouse: {'action': 'presence', 'time': 1687876428.317045, 'user': {'username': 'Mouse', 'status': 'online'}, 'type': 'status'}
+2023-06-27 17:33:48,627 INFO server.py Response message was sent: {'action': 'login', 'time': 1687876428.6268542, 'alert': 'ok'}
+2023-06-27 17:33:52,661 INFO server.py Received message from client Mouse: {'action': 'quit', 'time': 1687876431.717946, 'user': {'username': 'Mouse'}}
+2023-06-27 17:33:52,662 ERROR server.py Client ('127.0.0.1', 53466) disconnected, error too many values to unpack (expected 2)
+2023-06-27 17:36:43,545 INFO server.py The connection was set - client: <socket.socket fd=1144, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 54186)>, address: ('127.0.0.1', 54186)
+2023-06-27 17:36:46,587 ERROR server.py Client ('127.0.0.1', 54186) disconnected, error Expecting value: line 1 column 1 (char 0)
+2023-06-27 17:36:52,080 INFO server.py IP-address: localhost, TCP-port: 7777
+2023-06-27 17:36:52,084 INFO server.py Socket was successfully created
+2023-06-27 17:36:56,094 INFO server.py The connection was set - client: <socket.socket fd=568, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 54239)>, address: ('127.0.0.1', 54239)
+2023-06-27 17:37:06,185 INFO server.py Received message from client Cat: {'action': 'presence', 'time': 1687876625.2777507, 'user': {'username': 'Cat', 'status': 'online'}, 'type': 'status'}
+2023-06-27 17:37:06,202 INFO server.py Response message was sent: {'action': 'login', 'time': 1687876626.2021234, 'alert': 'ok'}
+2023-06-27 17:37:17,301 INFO server.py Received message from client Cat: {'action': 'quit', 'time': 1687876633.8903537, 'user': {'username': 'Cat'}}
+2023-06-27 17:37:17,302 ERROR server.py Client ('127.0.0.1', 54239) disconnected, error too many values to unpack (expected 2)
+2023-06-27 17:39:16,960 INFO server.py The connection was set - client: <socket.socket fd=408, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 54798)>, address: ('127.0.0.1', 54798)
+2023-06-27 17:39:19,974 INFO server.py Received message from client Cat: {'action': 'presence', 'time': 1687876759.460258, 'user': {'username': 'Cat', 'status': 'online'}, 'type': 'status'}
+2023-06-27 17:39:19,975 INFO server.py Response message was sent: {'action': 'login', 'time': 1687876759.9753563, 'alert': 'error'}
+2023-06-27 17:39:19,976 ERROR server.py Client ('127.0.0.1', 54798) disconnected, error too many values to unpack (expected 2)
+2023-06-27 17:39:54,048 INFO server.py IP-address: localhost, TCP-port: 7777
+2023-06-27 17:39:54,052 INFO server.py Socket was successfully created
+2023-06-27 17:39:58,922 INFO server.py IP-address: localhost, TCP-port: 7777
+2023-06-27 17:39:58,926 INFO server.py Socket was successfully created
+2023-06-27 17:40:09,141 INFO server.py IP-address: localhost, TCP-port: 7777
+2023-06-27 17:40:09,146 INFO server.py Socket was successfully created
+2023-06-27 17:40:13,766 INFO server.py The connection was set - client: <socket.socket fd=956, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 55034)>, address: ('127.0.0.1', 55034)
+2023-06-27 17:40:18,828 INFO server.py Received message from client Mouse: {'action': 'presence', 'time': 1687876817.8322957, 'user': {'username': 'Mouse', 'status': 'online'}, 'type': 'status'}
+2023-06-27 17:40:18,846 INFO server.py Response message was sent: {'action': 'login', 'time': 1687876818.8450024, 'alert': 'ok'}
+2023-06-27 17:40:39,069 INFO server.py Received message from client Mouse: {'action': 'quit', 'time': 1687876825.4632702, 'user': {'username': 'Mouse'}}
+2023-06-27 17:43:20,618 ERROR server.py Client ('127.0.0.1', 55034) disconnected, error too many values to unpack (expected 2)
+2023-06-27 17:43:37,195 INFO server.py IP-address: localhost, TCP-port: 7777
+2023-06-27 17:43:37,199 INFO server.py Socket was successfully created
+2023-06-27 17:43:42,914 INFO server.py The connection was set - client: <socket.socket fd=912, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 55865)>, address: ('127.0.0.1', 55865)
+2023-06-27 17:43:46,951 INFO server.py Received message from client Cat: {'action': 'presence', 'time': 1687877026.9020512, 'user': {'username': 'Cat', 'status': 'online'}, 'type': 'status'}
+2023-06-27 17:43:46,969 INFO server.py Response message was sent: {'action': 'login', 'time': 1687877026.9681907, 'alert': 'ok'}
+2023-06-27 17:43:54,062 INFO server.py Received message from client Cat: {'action': 'quit', 'time': 1687877032.6382835, 'user': {'username': 'Cat'}}
+2023-06-27 17:44:32,056 INFO server.py IP-address: localhost, TCP-port: 7777
+2023-06-27 17:44:32,060 INFO server.py Socket was successfully created
+2023-06-27 17:44:37,864 INFO server.py The connection was set - client: <socket.socket fd=1012, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56086)>, address: ('127.0.0.1', 56086)
+2023-06-27 17:44:42,907 INFO server.py Received message from client Dog: {'action': 'presence', 'time': 1687877082.4728363, 'user': {'username': 'Dog', 'status': 'online'}, 'type': 'status'}
+2023-06-27 17:44:42,925 INFO server.py Response message was sent: {'action': 'login', 'time': 1687877082.924574, 'alert': 'ok'}
+2023-06-27 17:44:49,963 INFO server.py Received message from client Dog: {'action': 'quit', 'time': 1687877088.4476275, 'user': {'username': 'Dog'}}
+2023-06-27 17:45:08,013 ERROR server.py Client ('127.0.0.1', 56086) disconnected, error too many values to unpack (expected 2)
+2023-06-27 20:45:18,829 INFO server.py IP-address: localhost, TCP-port: 7777
+2023-06-27 20:45:18,833 INFO server.py Socket was successfully created
+2023-06-27 20:45:27,749 INFO server.py The connection was set - client: <socket.socket fd=924, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 60979)>, address: ('127.0.0.1', 60979)
+2023-06-27 20:45:32,793 INFO server.py Received message from client Cat: {'action': 'presence', 'time': 1687887931.9148533, 'user': {'username': 'Cat', 'status': 'online'}, 'type': 'status'}
+2023-06-27 20:45:32,814 INFO server.py Response message was sent: {'action': 'login', 'time': 1687887932.813747, 'alert': 'ok'}
+2023-06-27 20:45:42,910 INFO server.py Received message from client Cat: {'action': 'quit', 'time': 1687887940.8427875, 'user': {'username': 'Cat'}}
+2023-06-27 20:46:07,451 ERROR server.py Client ('127.0.0.1', 60979) disconnected, error too many values to unpack (expected 2)
+2023-06-27 20:47:27,946 INFO server.py IP-address: localhost, TCP-port: 7777
+2023-06-27 20:47:27,950 INFO server.py Socket was successfully created
+2023-06-27 20:47:31,547 INFO server.py The connection was set - client: <socket.socket fd=888, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 61475)>, address: ('127.0.0.1', 61475)
+2023-06-27 20:47:35,584 INFO server.py Received message from client Dog: {'action': 'presence', 'time': 1687888055.2247145, 'user': {'username': 'Dog', 'status': 'online'}, 'type': 'status'}
+2023-06-27 20:47:35,608 INFO server.py Response message was sent: {'action': 'login', 'time': 1687888055.6078262, 'alert': 'ok'}
+2023-06-27 20:47:48,730 INFO server.py Received message from client Dog: {'action': 'quit', 'time': 1687888066.065226, 'user': {'username': 'Dog'}}
+2023-06-27 20:49:35,650 ERROR server.py Client ('127.0.0.1', 61475) disconnected, error too many values to unpack (expected 2)
+2023-06-27 20:52:39,725 INFO server.py IP-address: localhost, TCP-port: 7777
+2023-06-27 20:52:39,730 INFO server.py Socket was successfully created
+2023-06-27 20:52:43,698 INFO server.py The connection was set - client: <socket.socket fd=788, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 62997)>, address: ('127.0.0.1', 62997)
+2023-06-27 20:52:47,737 INFO server.py Received message from client Mouse: {'action': 'presence', 'time': 1687888367.4394615, 'user': {'username': 'Mouse', 'status': 'online'}, 'type': 'status'}
+2023-06-27 20:52:47,756 INFO server.py Response message was sent: {'action': 'login', 'time': 1687888367.754433, 'alert': 'ok'}
+2023-06-27 20:53:02,881 INFO server.py Received message from client Mouse: {'action': 'quit', 'time': 1687888380.4197187, 'user': {'username': 'Mouse'}}
+2023-06-27 20:53:51,243 ERROR server.py Client ('127.0.0.1', 62997) disconnected, error too many values to unpack (expected 2)
+2023-06-27 21:13:15,166 INFO server.py IP-address: localhost, TCP-port: 7777
+2023-06-27 21:13:15,171 INFO server.py Socket was successfully created
+2023-06-27 21:13:18,454 INFO server.py The connection was set - client: <socket.socket fd=972, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 52237)>, address: ('127.0.0.1', 52237)
+2023-06-27 21:13:37,637 INFO server.py Received message from client Cat: {'time': 1687889616.9786944, 'action': 'presence', 'user': {'username': 'Cat', 'status': 'online'}, 'type': 'status'}
+2023-06-27 21:13:58,850 INFO server.py Response message was sent: {'time': 1687889626.9100733, 'action': 'status code', 'response': <HTTPStatus.OK: 200>, 'alert': 'ok'}
+2023-06-27 21:43:46,499 INFO server_utils.py IP-address: localhost, TCP-port: 7777
+2023-06-27 21:43:46,504 INFO server.py Socket was successfully created
+2023-06-27 21:43:51,984 INFO server.py The connection was set - client: <socket.socket fd=852, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 59587)>, address: ('127.0.0.1', 59587)
+2023-06-27 21:43:59,048 INFO server.py Received message from client Cat: {'time': 1687891438.3245096, 'action': 'presence', 'user': {'username': 'Cat', 'status': 'online'}, 'type': 'status'}
+2023-06-27 21:44:17,221 INFO server.py Response message was sent: {'time': 1687891455.5158396, 'action': 'status code', 'response': <HTTPStatus.OK: 200>, 'alert': 'ok'}
+2023-06-27 22:23:03,780 INFO server_utils.py IP-address: localhost, TCP-port: 7777
+2023-06-27 22:23:03,785 INFO server.py Socket was successfully created
+2023-06-27 22:23:18,804 INFO server.py The connection was set - client: <socket.socket fd=636, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 53678)>, address: ('127.0.0.1', 53678)
+2023-06-27 22:23:28,917 INFO server.py Received message from client Dog: {'time': 1687893808.1095324, 'action': 'presence', 'user': {'username': 'Dog', 'status': 'online'}, 'type': 'status'}
+2023-06-27 22:23:28,918 INFO server.py Response message was sent: {'time': 1687893808.9188619, 'action': 'status code', 'response': <HTTPStatus.BAD_REQUEST: 400>, 'error': 'Username already exists'}
+2023-06-27 22:24:19,305 INFO server.py Received message from client Dog: {'time': 1687893858.6624084, 'action': 'quit', 'user': {'username': 'Dog'}}
+2023-06-27 22:24:19,319 INFO utils.py Deleted user None
+2023-06-27 22:29:29,540 INFO server_utils.py IP-address: localhost, TCP-port: 7777
+2023-06-27 22:29:29,546 INFO server.py Socket was successfully created
+2023-06-27 22:29:35,478 INFO server.py The connection was set - client: <socket.socket fd=800, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 55301)>, address: ('127.0.0.1', 55301)
+2023-06-27 22:29:40,524 INFO server.py Received message from client Cat: {'time': 1687894179.597203, 'user': {'username': 'Cat', 'status': 'online'}, 'action': 'login'}
+2023-06-27 22:29:40,542 INFO server.py Response message was sent: {'time': 1687894180.5422184, 'action': 'login', 'result': 'accepted'}
+2023-06-27 22:29:41,551 ERROR server.py Client ('127.0.0.1', 55301) disconnected, error Expecting value: line 1 column 1 (char 0)
+2023-06-27 22:31:35,508 INFO server.py The connection was set - client: <socket.socket fd=812, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 55776)>, address: ('127.0.0.1', 55776)
+2023-06-27 22:31:39,547 INFO server.py Received message from client Dog: {'time': 1687894298.8198485, 'user': {'username': 'Dog', 'status': 'online'}, 'action': 'login'}
+2023-06-27 22:31:39,582 INFO server.py Response message was sent: {'time': 1687894299.5827765, 'action': 'login', 'result': 'accepted'}
+2023-06-27 22:32:30,253 INFO server.py Received message from client Dog: {'time': 1687894349.6605074, 'action': 'quit', 'user': {'username': 'Dog'}}
+2023-06-27 22:32:30,256 ERROR server.py Client ('127.0.0.1', 55776) disconnected, error too many values to unpack (expected 2)
+2023-06-27 22:32:33,346 INFO server.py The connection was set - client: <socket.socket fd=828, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56001)>, address: ('127.0.0.1', 56001)
+2023-06-27 22:32:35,373 INFO server.py Received message from client Cat: {'time': 1687894355.154384, 'user': {'username': 'Cat', 'status': 'online'}, 'action': 'login'}
+2023-06-27 22:32:35,388 INFO server.py Response message was sent: {'time': 1687894355.3873637, 'action': 'status code', 'result': 'rejected', 'error': 'Username already exists'}
+2023-06-27 22:32:35,388 ERROR server.py Client ('127.0.0.1', 56001) disconnected, error too many values to unpack (expected 2)
+2023-06-27 22:33:01,562 INFO server.py The connection was set - client: <socket.socket fd=644, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56185)>, address: ('127.0.0.1', 56185)
+2023-06-27 22:33:07,618 INFO server.py Received message from client Mouse: {'time': 1687894387.0234458, 'user': {'username': 'Mouse', 'status': 'online'}, 'action': 'login'}
+2023-06-27 22:33:07,624 INFO server.py Response message was sent: {'time': 1687894387.6243746, 'action': 'login', 'result': 'accepted'}
+2023-06-27 22:33:25,805 INFO server.py Received message from client Mouse: {'time': 1687894405.6049554, 'action': 'quit', 'user': {'username': 'Mouse'}}
+2023-06-27 22:33:25,806 ERROR server.py Client ('127.0.0.1', 56185) disconnected, error too many values to unpack (expected 2)

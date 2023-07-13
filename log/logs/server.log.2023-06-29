@@ -1,0 +1,7 @@
+2023-06-29 13:07:37,743 INFO server_utils.py IP-address: localhost, TCP-port: 7777
+2023-06-29 13:07:37,746 INFO server.py Socket was successfully created
+2023-06-29 13:07:40,556 INFO server.py The connection was set - client: <socket.socket fd=968, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 59383)>, address: ('127.0.0.1', 59383)
+2023-06-29 13:07:47,646 INFO server.py Received message from client Cat: {'time': 1688033266.6890368, 'user': {'username': 'Cat', 'status': 'online'}, 'action': 'login'}
+2023-06-29 13:07:47,666 INFO server.py Response message was sent: {'time': 1688033267.6666322, 'action': 'login', 'result': 'accepted'}
+2023-06-29 13:08:12,837 INFO server.py Received message from client Cat: {'time': 1688033292.3137603, 'action': 'quit', 'user': {'username': 'Cat'}}
+2023-06-29 13:09:20,779 ERROR server.py Client ('127.0.0.1', 59383) disconnected, error too many values to unpack (expected 2)

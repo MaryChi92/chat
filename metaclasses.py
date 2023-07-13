@@ -2,8 +2,7 @@ import dis
 
 from types import FunctionType
 
-
-VERIFICATION_PARAMS = ("accept", "listen", "connect", "AF_INET", "SOCK_STREAM")
+from app.config import VERIFICATION_PARAMS
 
 
 class BaseVerifier(type):

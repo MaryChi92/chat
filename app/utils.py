@@ -19,25 +19,15 @@ class Users:
     def delete_user(self, sock, disconnect=False):
         username = self.get_username_by_sock(sock)
 
-        self.sockets.remove(sock)
-        if disconnect:
-            sock.close()
+        # if disconnect:
+        #     sock.close()
         if username:
             del self.usernames_sockets[username]
+        self.sockets.remove(sock)
         logger.info(f'Deleted user {username}')
 
 
 class ProcessClientMessageMixin:
-    @staticmethod
-    @Log()
-    def get_status_code_message(message=False, status='ok', error='error'):
-        if message:
-            logger.info(f"Getting a response for client's presence message {message}")
-
-        if status == 'ok':
-            return f'resp_code = {"response": "200", "alert": "Ok"}'
-        return f'resp_code = {"response": "400", "error": "{error}"}'
-
     def process_client_message(self, message, sock, users):
         pass
 
@@ -56,9 +46,9 @@ class Utils:
         sock.send(message)
 
     @staticmethod
-    def make_message_template(action, **kwargs):
+    def make_message_template(**kwargs):
         message = {
-            "action": action,
+            # "action": action,
             "time": time(),
         }
         for k, v in kwargs.items():

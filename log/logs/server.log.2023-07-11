@@ -1,0 +1,10 @@
+2023-07-11 15:45:24,631 INFO server_utils.py IP-address: localhost, TCP-port: 7777
+2023-07-11 15:45:24,638 INFO server.py Socket was successfully created
+2023-07-11 15:45:31,735 INFO server.py The connection was set - client: <socket.socket fd=872, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 62480)>, address: ('127.0.0.1', 62480)
+2023-07-11 15:45:38,816 INFO server.py Received message from client Cat: {'time': 1689079537.8453963, 'user': {'username': 'Cat', 'status': 'online'}, 'action': 'login'}
+2023-07-11 15:45:38,836 INFO server.py Response message was sent: {'time': 1689079538.8355932, 'action': 'login', 'result': 'accepted'}
+2023-07-11 15:45:51,970 ERROR server.py Client ('127.0.0.1', 62480) disconnected, error [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2023-07-11 15:46:20,976 INFO server.py The connection was set - client: <socket.socket fd=964, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 62669)>, address: ('127.0.0.1', 62669)
+2023-07-11 15:46:24,012 INFO server.py Received message from client Cat: {'time': 1689079583.43379, 'user': {'username': 'Cat', 'status': 'online'}, 'action': 'login'}
+2023-07-11 15:46:24,013 INFO server.py Response message was sent: {'time': 1689079584.0123403, 'action': 'status code', 'result': 'rejected', 'error': 'Username already exists'}
+2023-07-11 15:46:24,013 ERROR server.py Client ('127.0.0.1', 62669) disconnected, error too many values to unpack (expected 2)

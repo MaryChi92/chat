@@ -728,3 +728,148 @@
 2023-06-27 16:43:01,644 INFO client.py The response from the server was received: {'action': 'login', 'time': 1687873381.644682, 'alert': 'ok'}
 2023-06-27 16:43:01,644 INFO client.py Parsing message from the server: {'action': 'login', 'time': 1687873381.644682, 'alert': 'ok'}
 2023-06-27 16:43:04,381 INFO client.py Disconnecting due to client's request
+2023-06-27 17:03:06,964 INFO client.py IP-address: localhost, TCP-port: 7777
+2023-06-27 17:03:06,968 INFO client.py Connected to server: 7777:localhost
+2023-06-27 17:03:11,548 INFO client.py Creating message from user: Mouse
+2023-06-27 17:03:12,021 INFO client.py The response from the server was received: {'action': 'login', 'time': 1687874592.020401, 'alert': 'ok'}
+2023-06-27 17:03:12,021 INFO client.py Parsing message from the server: {'action': 'login', 'time': 1687874592.020401, 'alert': 'ok'}
+2023-06-27 17:03:14,839 INFO client.py Disconnecting due to client's request
+2023-06-27 17:26:34,878 INFO client.py IP-address: localhost, TCP-port: 7777
+2023-06-27 17:26:34,883 INFO client.py Connected to server: 7777:localhost
+2023-06-27 17:26:38,371 INFO client.py Creating message from user: Cat
+2023-06-27 17:26:38,918 INFO client.py The response from the server was received: {'action': 'login', 'time': 1687875998.917593, 'alert': 'ok'}
+2023-06-27 17:26:38,918 INFO client.py Parsing message from the server: {'action': 'login', 'time': 1687875998.917593, 'alert': 'ok'}
+2023-06-27 17:27:30,907 INFO client.py Creating message from user: Cat
+2023-06-27 17:27:31,488 INFO client.py The message was received: {'action': 'msg', 'time': 1687876050.9079728, 'user': {'username': 'Cat', 'status': 'online'}, 'body': 'meow', 'to_user': 'Cat'}
+2023-06-27 17:27:31,488 INFO client.py Parsing message from the server: {'action': 'msg', 'time': 1687876050.9079728, 'user': {'username': 'Cat', 'status': 'online'}, 'body': 'meow', 'to_user': 'Cat'}
+2023-06-27 17:27:46,296 INFO client.py Disconnecting due to client's request
+2023-06-27 17:33:16,442 INFO client.py IP-address: localhost, TCP-port: 7777
+2023-06-27 17:33:16,447 INFO client.py Connected to server: 7777:localhost
+2023-06-27 17:33:23,653 INFO client.py Creating message from user: Dog
+2023-06-27 17:33:24,555 INFO client.py The response from the server was received: {'action': 'login', 'time': 1687876404.5541348, 'alert': 'ok'}
+2023-06-27 17:33:24,555 INFO client.py Parsing message from the server: {'action': 'login', 'time': 1687876404.5541348, 'alert': 'ok'}
+2023-06-27 17:33:30,776 INFO client.py Disconnecting due to client's request
+2023-06-27 17:33:43,560 INFO client.py IP-address: localhost, TCP-port: 7777
+2023-06-27 17:33:43,565 INFO client.py Connected to server: 7777:localhost
+2023-06-27 17:33:48,316 INFO client.py Creating message from user: Mouse
+2023-06-27 17:33:48,628 INFO client.py The response from the server was received: {'action': 'login', 'time': 1687876428.6268542, 'alert': 'ok'}
+2023-06-27 17:33:48,628 INFO client.py Parsing message from the server: {'action': 'login', 'time': 1687876428.6268542, 'alert': 'ok'}
+2023-06-27 17:33:51,719 INFO client.py Disconnecting due to client's request
+2023-06-27 17:36:43,540 INFO client.py IP-address: localhost, TCP-port: 7777
+2023-06-27 17:36:43,545 INFO client.py Connected to server: 7777:localhost
+2023-06-27 17:36:56,086 INFO client.py IP-address: localhost, TCP-port: 7777
+2023-06-27 17:36:56,094 INFO client.py Connected to server: 7777:localhost
+2023-06-27 17:37:05,277 INFO client.py Creating message from user: Cat
+2023-06-27 17:37:06,203 INFO client.py The response from the server was received: {'action': 'login', 'time': 1687876626.2021234, 'alert': 'ok'}
+2023-06-27 17:37:06,203 INFO client.py Parsing message from the server: {'action': 'login', 'time': 1687876626.2021234, 'alert': 'ok'}
+2023-06-27 17:37:22,672 INFO client.py Disconnecting due to client's request
+2023-06-27 17:39:16,952 INFO client.py IP-address: localhost, TCP-port: 7777
+2023-06-27 17:39:16,960 INFO client.py Connected to server: 7777:localhost
+2023-06-27 17:39:19,460 INFO client.py Creating message from user: Cat
+2023-06-27 17:39:19,977 INFO client.py The response from the server was received: {'action': 'login', 'time': 1687876759.9753563, 'alert': 'error'}
+2023-06-27 17:39:19,977 INFO client.py Parsing message from the server: {'action': 'login', 'time': 1687876759.9753563, 'alert': 'error'}
+2023-06-27 17:39:24,917 INFO client.py Creating message from user: Dog
+2023-06-27 17:40:13,759 INFO client.py IP-address: localhost, TCP-port: 7777
+2023-06-27 17:40:13,766 INFO client.py Connected to server: 7777:localhost
+2023-06-27 17:40:17,832 INFO client.py Creating message from user: Mouse
+2023-06-27 17:40:18,847 INFO client.py The response from the server was received: {'action': 'login', 'time': 1687876818.8450024, 'alert': 'ok'}
+2023-06-27 17:40:18,847 INFO client.py Parsing message from the server: {'action': 'login', 'time': 1687876818.8450024, 'alert': 'ok'}
+2023-06-27 17:43:42,908 INFO client.py IP-address: localhost, TCP-port: 7777
+2023-06-27 17:43:42,913 INFO client.py Connected to server: 7777:localhost
+2023-06-27 17:43:46,902 INFO client.py Creating message from user: Cat
+2023-06-27 17:43:46,970 INFO client.py The response from the server was received: {'action': 'login', 'time': 1687877026.9681907, 'alert': 'ok'}
+2023-06-27 17:43:46,970 INFO client.py Parsing message from the server: {'action': 'login', 'time': 1687877026.9681907, 'alert': 'ok'}
+2023-06-27 17:44:37,858 INFO client.py IP-address: localhost, TCP-port: 7777
+2023-06-27 17:44:37,864 INFO client.py Connected to server: 7777:localhost
+2023-06-27 17:44:42,472 INFO client.py Creating message from user: Dog
+2023-06-27 17:44:42,926 INFO client.py The response from the server was received: {'action': 'login', 'time': 1687877082.924574, 'alert': 'ok'}
+2023-06-27 17:44:42,927 INFO client.py Parsing message from the server: {'action': 'login', 'time': 1687877082.924574, 'alert': 'ok'}
+2023-06-27 20:45:27,743 INFO client.py IP-address: localhost, TCP-port: 7777
+2023-06-27 20:45:27,749 INFO client.py Connected to server: 7777:localhost
+2023-06-27 20:45:31,914 INFO client.py Creating message from user: Cat
+2023-06-27 20:45:32,814 INFO client.py The response from the server was received: {'action': 'login', 'time': 1687887932.813747, 'alert': 'ok'}
+2023-06-27 20:45:32,815 INFO client.py Parsing message from the server: {'action': 'login', 'time': 1687887932.813747, 'alert': 'ok'}
+2023-06-27 20:47:31,540 INFO client.py IP-address: localhost, TCP-port: 7777
+2023-06-27 20:47:31,547 INFO client.py Connected to server: 7777:localhost
+2023-06-27 20:47:35,223 INFO client.py Creating message from user: Dog
+2023-06-27 20:47:35,609 INFO client.py The response from the server was received: {'action': 'login', 'time': 1687888055.6078262, 'alert': 'ok'}
+2023-06-27 20:47:35,609 INFO client.py Parsing message from the server: {'action': 'login', 'time': 1687888055.6078262, 'alert': 'ok'}
+2023-06-27 20:52:43,692 INFO client.py IP-address: localhost, TCP-port: 7777
+2023-06-27 20:52:43,698 INFO client.py Connected to server: 7777:localhost
+2023-06-27 20:52:47,439 INFO client.py Creating message from user: Mouse
+2023-06-27 20:52:47,756 INFO client.py The response from the server was received: {'action': 'login', 'time': 1687888367.754433, 'alert': 'ok'}
+2023-06-27 20:52:47,756 INFO client.py Parsing message from the server: {'action': 'login', 'time': 1687888367.754433, 'alert': 'ok'}
+2023-06-27 20:53:10,031 INFO client.py Disconnecting due to client's request
+2023-06-27 21:13:18,447 INFO client.py IP-address: localhost, TCP-port: 7777
+2023-06-27 21:13:18,453 INFO client.py Connected to server: 7777:localhost
+2023-06-27 21:13:36,978 INFO client.py Creating message from user: Cat
+2023-06-27 21:13:57,351 INFO client.py The response from the server was received: {'time': 1687889626.9100733, 'action': 'status code', 'response': 200, 'alert': 'ok'}
+2023-06-27 21:13:57,352 INFO client.py Parsing message from the server: {'time': 1687889626.9100733, 'action': 'status code', 'response': 200, 'alert': 'ok'}
+2023-06-27 21:43:51,978 INFO client.py IP-address: localhost, TCP-port: 7777
+2023-06-27 21:43:51,983 INFO client.py Connected to server: 7777:localhost
+2023-06-27 21:43:58,323 INFO client.py Creating message from user: Cat
+2023-06-27 21:44:16,321 INFO client.py The response from the server was received: {'time': 1687891455.5158396, 'action': 'status code', 'response': 200, 'alert': 'ok'}
+2023-06-27 21:44:16,321 INFO client.py Parsing message from the server: {'time': 1687891455.5158396, 'action': 'status code', 'response': 200, 'alert': 'ok'}
+2023-06-27 21:44:31,651 INFO client.py Disconnecting due to client's request
+2023-06-27 22:23:18,799 INFO client.py IP-address: localhost, TCP-port: 7777
+2023-06-27 22:23:18,804 INFO client.py Connected to server: 7777:localhost
+2023-06-27 22:23:28,109 INFO client.py Creating message from user: Dog
+2023-06-27 22:23:28,918 INFO client.py The response from the server was received: {'time': 1687893808.9188619, 'action': 'status code', 'response': 400, 'error': 'Username already exists'}
+2023-06-27 22:23:28,918 INFO client.py Parsing message from the server: {'time': 1687893808.9188619, 'action': 'status code', 'response': 400, 'error': 'Username already exists'}
+2023-06-27 22:24:18,664 INFO client.py Disconnecting due to client's request
+2023-06-27 22:29:35,473 INFO client.py IP-address: localhost, TCP-port: 7777
+2023-06-27 22:29:35,478 INFO client.py Connected to server: 7777:localhost
+2023-06-27 22:29:39,597 INFO client.py Creating message from user: Cat
+2023-06-27 22:29:40,542 INFO client.py The response from the server was received: {'time': 1687894180.5422184, 'action': 'login', 'result': 'accepted'}
+2023-06-27 22:29:40,542 INFO client.py Parsing message from the server: {'time': 1687894180.5422184, 'action': 'login', 'result': 'accepted'}
+2023-06-27 22:31:35,477 INFO client.py IP-address: localhost, TCP-port: 7777
+2023-06-27 22:31:35,508 INFO client.py Connected to server: 7777:localhost
+2023-06-27 22:31:38,819 INFO client.py Creating message from user: Dog
+2023-06-27 22:31:39,582 INFO client.py The response from the server was received: {'time': 1687894299.5827765, 'action': 'login', 'result': 'accepted'}
+2023-06-27 22:31:39,582 INFO client.py Parsing message from the server: {'time': 1687894299.5827765, 'action': 'login', 'result': 'accepted'}
+2023-06-27 22:32:29,676 INFO client.py Disconnecting due to client's request
+2023-06-27 22:32:33,342 INFO client.py IP-address: localhost, TCP-port: 7777
+2023-06-27 22:32:33,346 INFO client.py Connected to server: 7777:localhost
+2023-06-27 22:32:35,154 INFO client.py Creating message from user: Cat
+2023-06-27 22:32:35,388 INFO client.py The response from the server was received: {'time': 1687894355.3873637, 'action': 'status code', 'result': 'rejected', 'error': 'Username already exists'}
+2023-06-27 22:32:35,388 INFO client.py Parsing message from the server: {'time': 1687894355.3873637, 'action': 'status code', 'result': 'rejected', 'error': 'Username already exists'}
+2023-06-27 22:33:01,557 INFO client.py IP-address: localhost, TCP-port: 7777
+2023-06-27 22:33:01,562 INFO client.py Connected to server: 7777:localhost
+2023-06-27 22:33:07,023 INFO client.py Creating message from user: Mouse
+2023-06-27 22:33:07,624 INFO client.py The response from the server was received: {'time': 1687894387.6243746, 'action': 'login', 'result': 'accepted'}
+2023-06-27 22:33:07,624 INFO client.py Parsing message from the server: {'time': 1687894387.6243746, 'action': 'login', 'result': 'accepted'}
+2023-06-27 22:33:25,606 INFO client.py Disconnecting due to client's request
+2023-06-29 13:03:10,084 INFO client.py IP-address: localhost, TCP-port: 7777
+2023-06-29 13:03:12,120 CRITICAL client.py Something went wrong: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение
+2023-06-29 13:03:23,947 INFO client.py IP-address: localhost, TCP-port: 7777
+2023-06-29 13:03:25,973 CRITICAL client.py Something went wrong: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение
+2023-06-29 13:04:30,443 INFO client.py IP-address: localhost, TCP-port: 7777
+2023-06-29 13:04:32,458 CRITICAL client.py Something went wrong: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение
+2023-06-29 13:06:25,396 INFO client.py IP-address: localhost, TCP-port: 7777
+2023-06-29 13:06:27,436 CRITICAL client.py Something went wrong: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение
+2023-06-29 13:06:45,891 INFO client.py IP-address: localhost, TCP-port: 7777
+2023-06-29 13:06:47,914 CRITICAL client.py Something went wrong: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение
+2023-06-29 13:07:20,988 INFO client.py IP-address: localhost, TCP-port: 7777
+2023-06-29 13:07:23,004 CRITICAL client.py Something went wrong: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение
+2023-06-29 13:07:40,540 INFO client.py IP-address: localhost, TCP-port: 7777
+2023-06-29 13:07:40,556 INFO client.py Connected to server: 7777:localhost
+2023-06-29 13:07:46,689 INFO client.py Creating message from user: Cat
+2023-06-29 13:07:47,666 INFO client.py The response from the server was received: {'time': 1688033267.6666322, 'action': 'login', 'result': 'accepted'}
+2023-06-29 13:07:47,666 INFO client.py Parsing message from the server: {'time': 1688033267.6666322, 'action': 'login', 'result': 'accepted'}
+2023-06-29 13:08:12,345 INFO client.py Disconnecting due to client's request
+2023-07-11 15:45:31,729 INFO client.py IP-address: localhost, TCP-port: 7777
+2023-07-11 15:45:31,734 INFO client.py Connected to server: 7777:localhost
+2023-07-11 15:45:37,845 INFO client.py Creating message from user: Cat
+2023-07-11 15:45:38,836 INFO client.py The response from the server was received: {'time': 1689079538.8355932, 'action': 'login', 'result': 'accepted'}
+2023-07-11 15:45:38,836 INFO client.py Parsing message from the server: {'time': 1689079538.8355932, 'action': 'login', 'result': 'accepted'}
+2023-07-11 15:46:20,971 INFO client.py IP-address: localhost, TCP-port: 7777
+2023-07-11 15:46:20,976 INFO client.py Connected to server: 7777:localhost
+2023-07-11 15:46:23,433 INFO client.py Creating message from user: Cat
+2023-07-11 15:46:24,013 INFO client.py The response from the server was received: {'time': 1689079584.0123403, 'action': 'status code', 'result': 'rejected', 'error': 'Username already exists'}
+2023-07-11 15:46:24,013 INFO client.py Parsing message from the server: {'time': 1689079584.0123403, 'action': 'status code', 'result': 'rejected', 'error': 'Username already exists'}
+2023-07-13 13:06:31,882 INFO client.py IP-address: localhost, TCP-port: 7777
+2023-07-13 13:06:31,887 INFO client.py Connected to server: 7777:localhost
+2023-07-13 13:06:40,952 INFO client.py Creating message from user: Cat
+2023-07-13 13:06:41,967 INFO client.py The response from the server was received: {'time': 1689242801.9662564, 'action': 'login', 'result': 'accepted'}
+2023-07-13 13:06:41,967 INFO client.py Parsing message from the server: {'time': 1689242801.9662564, 'action': 'login', 'result': 'accepted'}
+2023-07-13 13:10:20,184 INFO client.py Disconnecting due to client's request
