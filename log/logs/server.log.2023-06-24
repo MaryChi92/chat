@@ -1,0 +1,3 @@
+2023-06-24 23:10:54,440 INFO server.py IP-address: localhost, TCP-port: 7777
+2023-06-24 23:10:54,460 INFO server.py Socket was successfully created
+2023-06-24 23:10:54,483 INFO server.py Function init_socket was called - args: (<__main__.Server object at 0x0000024E6FEC6CD0>,), kwargs: {}. It was called from function main()

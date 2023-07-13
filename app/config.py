@@ -6,3 +6,5 @@ ENCODING = 'utf-8'
 MAX_CONNECTIONS = 10
 TIMEOUT = 1.0
 MAX_PACKAGE_LENGTH = 2048
+
+SERVER_DATABASE = 'sqlite:///server_base.db3'
