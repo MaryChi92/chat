@@ -1,10 +1,11 @@
 import sys
 from socket import AF_INET, SOCK_STREAM, socket
 from select import select
-from argparse import ArgumentParser
 from collections import deque
+from http import HTTPStatus
 
-from app.config import DEFAULT_PORT, DEFAULT_HOST, MAX_CONNECTIONS, TIMEOUT
+from app.config import MAX_CONNECTIONS, TIMEOUT
+from app.server_utils import parse_params
 from app.utils import ProcessClientMessageMixin, Users, Utils
 from log.server_log_config import logger
 from log.deco_log_config import Log
@@ -21,19 +22,6 @@ class ServerVerifier(BaseVerifier):
             raise TypeError("Connect method is not allowed")
 
 
-def parse_params():
-    parser = ArgumentParser()
-    parser.add_argument('-p', type=int, default=DEFAULT_PORT, help='TCP-port')
-    parser.add_argument('-a', default=DEFAULT_HOST, type=str, help='IP-address')
-    namespace = parser.parse_args(sys.argv[1:])
-    p_host = namespace.a
-    p_port = namespace.p
-    logger.info(
-        f"IP-address: {p_host if p_host else DEFAULT_PORT}, TCP-port: {p_port if p_port else DEFAULT_HOST}"
-    )
-    return p_host, p_port
-
-
 class Server(Utils, ProcessClientMessageMixin, metaclass=ServerVerifier):
     port = Port()
 
@@ -45,18 +33,6 @@ class Server(Utils, ProcessClientMessageMixin, metaclass=ServerVerifier):
         self.messages = deque()
 
         self.db = db
-
-    # @staticmethod
-    # @Log()
-    # def parse_params():
-    #     parser = ArgumentParser()
-    #     parser.add_argument('-p', type=int, default=DEFAULT_PORT, help='TCP-port')
-    #     parser.add_argument('-a', default=DEFAULT_HOST, type=str, help='IP-address')
-    #     args = parser.parse_args()
-    #     logger.info(
-    #         f"IP-address: {args.a if args.a else DEFAULT_PORT}, TCP-port: {args.p if args.p else DEFAULT_HOST}"
-    #     )
-    #     return args.a, args.p
 
     @Log()
     def init_socket(self):
@@ -75,35 +51,48 @@ class Server(Utils, ProcessClientMessageMixin, metaclass=ServerVerifier):
                 message = self.get_message(sock)
                 current_client_name = message["user"]["username"]
                 logger.info(f'Received message from client {current_client_name}: {message}')
+
+                # process presence message
                 if message["action"] == "presence":
+                    response_message = self.make_message_template(action='status code', response=HTTPStatus.OK,
+                                                                  alert='ok')
+                    self.send_message(sock, response_message)
+                    logger.info(f'Response message was sent: {response_message}')
+
+                elif message["action"] == "login":
                     if current_client_name not in self.users.usernames_sockets.keys():
                         self.users.usernames_sockets[current_client_name] = sock
                         client_ip, client_port = sock.getpeername()
                         self.db.client_login(current_client_name, client_ip, client_port)
-                        # status_code_message = self.get_status_code_message(message)
-                        response_message = self.make_message_template("login", alert="ok")
+                        response_message = self.make_message_template(action='login', result='accepted')
                         self.send_message(sock, response_message)
                         logger.info(f'Response message was sent: {response_message}')
                     else:
-                        # status_code_message = self.get_status_code_message(message, status='error', error='User
-                        # with this username already exists')
-                        response_message = self.make_message_template("login", alert="error")
+                        response_message = self.make_message_template(action='status code', result='rejected',
+                                                                      error='Username already exists')
                         self.send_message(sock, response_message)
                         logger.info(f'Response message was sent: {response_message}')
                         self.users.delete_user(sock)
                         sock.close()
                     return
+
+                # process sending message to another client
                 elif message["action"] == "msg":
                     self.messages.append(message)
                     return
+
+                # process quit message
                 elif message["action"] == "quit":
-                    self.users.delete_user(sock, disconnect=True)
                     self.db.client_logout(current_client_name)
+                    self.users.delete_user(sock, disconnect=True)
                     return
+
+                # process incorrect request
                 else:
-                    response_message = self.get_status_code_message('error', error='Incorrect request')
+                    response_message = self.make_message_template(error='Incorrect request')
                     self.send_message(sock, response_message)
                     return
+
             except Exception as e:
                 logger.error(f'Client {sock.getpeername()} disconnected, error {e}')
                 self.users.sockets.remove(sock)
@@ -161,6 +150,6 @@ class Server(Utils, ProcessClientMessageMixin, metaclass=ServerVerifier):
 if __name__ == '__main__':
     db = Storage()
 
-    c_host, c_port = parse_params()
-    server = Server(c_host, c_port)
+    host, port = parse_params()
+    server = Server(host, port)
     server.run()

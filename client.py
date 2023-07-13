@@ -9,6 +9,7 @@ from app.utils import Utils
 from log.client_log_config import logger
 from log.deco_log_config import Log
 from metaclasses import BaseVerifier
+from app.models import ClientStorage
 
 
 class ClientVerifier(BaseVerifier):
@@ -28,11 +29,13 @@ class Client(Utils, metaclass=ClientVerifier):
     def __init__(self):
         self.username = None
 
+        self.db = db
+
     @Log()
-    def create_message(self, action, **kwargs):
+    def create_message(self, **kwargs):
         user = {"username": self.username, "status": "online"}
         logger.info(f'Creating message from user: {user["username"]}')
-        return self.make_message_template(action=action, user=user, **kwargs)
+        return self.make_message_template(user=user, **kwargs)
 
     @staticmethod
     @Log()
@@ -51,9 +54,9 @@ class Client(Utils, metaclass=ClientVerifier):
         logger.info(f'Parsing message from the server: {message}')
 
         if message["action"] == "login":
-            if message["alert"] == "ok":
+            if message["result"] == "accepted":
                 return f'You are logged in'
-            return 'Rejected'
+            return message["result"].title()
 
         if message["action"] == "msg" and message["to_user"] == self.username:
             return f'{message["body"]}'
@@ -70,13 +73,13 @@ class Client(Utils, metaclass=ClientVerifier):
     def set_username(self):
         while not self.username:
             self.username = input('Enter your name: ')
-            presence_message = self.create_message(action="presence", type="status")
+            presence_message = self.create_message(action="login")
             self.send_message(self.sock, presence_message)
             response = self.get_message(self.sock)
             logger.info(f'The response from the server was received: {response}')
             parsed_message = self.parse_message(response)
-            if parsed_message == 'Rejected':
-                print(f'{parsed_message}')
+            print(parsed_message)
+            if parsed_message == 'rejected':
                 self.username = None
 
     @Log()
@@ -97,7 +100,10 @@ class Client(Utils, metaclass=ClientVerifier):
 
     @Log()
     def outgoing_stream(self):
-        while command := input('Enter "message" to send a message or "Q" to quit: '):
+        while command := input('\nEnter "message" to send a message or a command:'
+                               '\n(/get_contacts, /add_contact, /delete_contact)'
+                               '\nEnter "Q" to quit: '):
+
             if command == 'Q':
                 quit_message = self.make_message_template(action="quit", user={"username": self.username})
                 self.send_message(self.sock, quit_message)
@@ -105,17 +111,27 @@ class Client(Utils, metaclass=ClientVerifier):
                 logger.info("Disconnecting due to client's request")
                 time.sleep(TIMEOUT)
                 break
+            elif command.startswith('/'):
+                command = command[1:]
+                if command == 'get_contacts':
+                    print(self.db.get_contact_list())
+                elif command == 'add_contact':
+                    contact = input('Enter name of the user you want to add: ')
+                    self.db.add_to_contact_list(contact)
+                elif command == 'delete_contact':
+                    contact = input('Enter name of the user you want to delete: ')
+                    self.db.delete_from_contact_list(contact)
             elif command == "message":
                 message = input('Text your message here: ')
-                addressee = input('Enter addressee(username): ')
-                self.send_message(
-                    self.sock,
-                    self.create_message(
-                        action="msg",
-                        body=message,
-                        to_user=addressee,
-                    ),
-                )
+                addressee = input(f'Your contacts list: {self.db.get_contact_list()}\n'
+                                  f'Enter addressee(username): ')
+                message_to_send = self.create_message(
+                                      action="msg",
+                                      body=message,
+                                      to_user=addressee,
+                                  )
+                self.db.add_message(addressee, message, incoming=False)
+                self.send_message(self.sock, message_to_send)
 
     @Log()
     def run(self):
@@ -127,6 +143,8 @@ class Client(Utils, metaclass=ClientVerifier):
 
 
 if __name__ == '__main__':
+    db = ClientStorage()
+
     client = Client()
     client.run()
     client.set_username()
